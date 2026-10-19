@@ -1,0 +1,12 @@
+.gradle/
+build/
+run/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Error triage dumps and temporary files
+*.txt
+*.args
+*.log

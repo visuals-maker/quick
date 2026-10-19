@@ -1,0 +1,27 @@
+// Original binary: sg/ec/WABTDuUoU2eciHZm
+package quick.module.player;
+
+import sg.ec.*;
+
+import net.minecraft.client.gui.screens.DeathScreen;
+import net.minecraft.client.gui.screens.Screen;
+
+// $VF: Compiled from s
+public class AutoRespawn extends ClientModule {
+   private static final String field13493 = "Auto Respawn";
+
+   public AutoRespawn() {
+      super(ModuleCategory.Player, ModuleSubCategory.Other);
+      this.setName(field13493);
+   }
+
+   @Subscribe
+   private void method05976(PlayerUpdateEvent var1) {
+      if (mc.player != null) {
+         Screen var2 = mc.gui.screen();
+         if (var2 instanceof DeathScreen && mc.player.deathTime > 0) {
+            mc.player.respawn();
+         }
+      }
+   }
+}

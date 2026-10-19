@@ -1,0 +1,17 @@
+// Original binary: hex/api/baritone/api/command/exception/CommandNoParserForTypeException
+package hex.api.baritone.api.command.exception;
+
+import ru.dreamix.fabricloader.VMBridge;
+
+// $VF: Compiled from s
+public class CommandNoParserForTypeException extends CommandUnhandledException {
+   private static String бяс = "";
+
+   public CommandNoParserForTypeException(Class<?> var1) {
+      super(String.format(бяс, var1.getSimpleName()));
+   }
+
+   static {
+      VMBridge.identifyClass(CommandNoParserForTypeException.class, "hpCuusKq");
+   }
+}

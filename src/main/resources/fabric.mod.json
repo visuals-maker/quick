@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "quickclient",
+  "version": "1.0.0",
+  "name": "QuickClient",
+  "description": "This is pasta",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/hex/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "sg.ec.QuickClient"
+    ]
+  },
+  "mixins": [
+    "quickclient.mixins.json",
+    "quickclient.scripts.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2-",
+    "java": ">=23",
+    "fabric-api": "*"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/Java-WebSocket-1.6.0.jar"
+    },
+    {
+      "file": "META-INF/jars/ecj-3.42.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jackson-annotations-2.21.jar"
+    },
+    {
+      "file": "META-INF/jars/jackson-core-2.21.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jackson-databind-2.21.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jackson-module-parameter-names-2.21.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jna-5.17.0.jar"
+    },
+    {
+      "file": "META-INF/jars/jna-platform-5.17.0.jar"
+    },
+    {
+      "file": "META-INF/jars/mediatransport4j-1.0.3.jar"
+    },
+    {
+      "file": "META-INF/jars/quickclient-script-api-1.0.0.jar"
+    }
+  ],
+  "accessWidener": "quickclient.accesswidener"
+}

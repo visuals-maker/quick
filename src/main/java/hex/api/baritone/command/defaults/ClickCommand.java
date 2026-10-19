@@ -1,0 +1,51 @@
+// Original binary: hex/api/baritone/command/defaults/ClickCommand
+package hex.api.baritone.command.defaults;
+
+import hex.api.baritone.api.IBaritone;
+import hex.api.baritone.api.command.Command;
+import hex.api.baritone.api.command.argument.IArgConsumer;
+import hex.api.baritone.api.command.exception.CommandException;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+import ru.dreamix.fabricloader.VMBridge;
+
+// $VF: Compiled from s
+public class ClickCommand extends Command {
+   private static String 诶Ыу = "";
+   private static String 诶Ыг = "";
+   private static String 诶Ыю = "";
+   private static String 诶Ы4 = "";
+   private static String 诶ЫС = "";
+   private static String 诶Ыъ = "";
+
+   @Override
+   public List<String> getLongDesc() {
+      return Arrays.asList(诶Ы4, "", 诶ЫС, 诶Ыъ);
+   }
+
+   @Override
+   public void execute(String var1, IArgConsumer var2) throws CommandException {
+      var2.requireMax(0);
+      this.baritone.openClick();
+      this.logDirect(诶Ыг);
+   }
+
+   @Override
+   public Stream<String> tabComplete(String var1, IArgConsumer var2) {
+      return Stream.empty();
+   }
+
+   public ClickCommand(IBaritone var1) {
+      super(var1, 诶Ыу);
+   }
+
+   @Override
+   public String getShortDesc() {
+      return 诶Ыю;
+   }
+
+   static {
+      VMBridge.identifyClass(ClickCommand.class, "73daCp8m");
+   }
+}

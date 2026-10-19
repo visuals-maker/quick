@@ -1,0 +1,20 @@
+allprojects {
+  afterEvaluate { p ->
+    if (p.plugins.hasPlugin('java')) {
+      p.tasks.register('dumpCp') {
+        doLast {
+          println 'CLASSPATH_START'
+          println p.sourceSets.main.compileClasspath.asPath
+          println 'CLASSPATH_END'
+        }
+      }
+      p.tasks.register('dumpSrc') {
+        doLast {
+          println 'SRC_START'
+          p.sourceSets.main.java.srcDirs.each { println it }
+          println 'SRC_END'
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "enable": {
+    "sounds": [
+      {
+        "name": "hex:enable",
+        "stream": false
+      }
+    ]
+  },
+  "enable1": {
+    "sounds": [
+      {
+        "name": "hex:enable1",
+        "stream": false
+      }
+    ]
+  },
+  "enable2": {
+    "sounds": [
+      {
+        "name": "hex:enable2",
+        "stream": false
+      }
+    ]
+  },
+  "enable3": {
+    "sounds": [
+      {
+        "name": "hex:enable3",
+        "stream": false
+      }
+    ]
+  },
+  "enable4": {
+    "sounds": [
+      {
+        "name": "hex:enable4",
+        "stream": false
+      }
+    ]
+  },
+"enable5": {
+    "sounds": [
+      {
+        "name": "hex:enable5",
+        "stream": false
+      }
+    ]
+  },
+  "disable": {
+    "sounds": [
+      {
+        "name": "hex:disable",
+        "stream": false
+      }
+    ]
+  },
+  "disable1": {
+    "sounds": [
+      {
+        "name": "hex:disable1",
+        "stream": false
+      }
+    ]
+  },
+  "disable2": {
+    "sounds": [
+      {
+        "name": "hex:disable2",
+        "stream": false
+      }
+    ]
+  },
+  "disable3": {
+    "sounds": [
+      {
+        "name": "hex:disable3",
+        "stream": false
+      }
+    ]
+  },
+  "disable4": {
+    "sounds": [
+      {
+        "name": "hex:disable4",
+        "stream": false
+      }
+    ]
+  },
+ "disable5": {
+    "sounds": [
+      {
+        "name": "hex:disable5",
+        "stream": false
+      }
+    ]
+  },
+ "killsound": {
+    "sounds": [
+      {
+        "name": "hex:killsound",
+        "stream": false
+      }
+    ]
+  }
+}

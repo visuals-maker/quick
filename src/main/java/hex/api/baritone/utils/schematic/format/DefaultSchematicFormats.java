@@ -1,0 +1,95 @@
+// Original binary: hex/api/baritone/utils/schematic/format/DefaultSchematicFormats
+package hex.api.baritone.utils.schematic.format;
+
+import hex.api.baritone.api.schematic.IStaticSchematic;
+import hex.api.baritone.api.schematic.format.ISchematicFormat;
+import hex.api.baritone.utils.schematic.format.defaults.LitematicaSchematic;
+import hex.api.baritone.utils.schematic.format.defaults.MCEditSchematic;
+import hex.api.baritone.utils.schematic.format.defaults.SpongeSchematic;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Collections;
+import java.util.List;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.NbtAccounter;
+import net.minecraft.nbt.NbtIo;
+import org.apache.commons.io.FilenameUtils;
+import ru.dreamix.fabricloader.VMBridge;
+
+// $VF: Compiled from s
+public enum DefaultSchematicFormats implements ISchematicFormat {
+   MCEDIT("schematic")   // $VF: Compiled from s
+ {
+      @Override
+      public IStaticSchematic parse(InputStream var1) throws IOException {
+         return new MCEditSchematic(NbtIo.readCompressed(var1, NbtAccounter.unlimitedHeap()));
+      }
+   },
+   SPONGE("schem")   // $VF: Compiled from s
+ {
+      private static String А7М = "";
+      private static String А75 = "";
+
+      @Override
+      public IStaticSchematic parse(InputStream var1) throws IOException {
+         CompoundTag var2 = NbtIo.readCompressed(var1, NbtAccounter.unlimitedHeap());
+         int sx = var2.getInt(А7М).orElse(-1);
+         switch (sx) {
+            case 1:
+            case 2:
+               return new SpongeSchematic(var2);
+            default:
+               throw new UnsupportedOperationException(А75);
+         }
+      }
+
+      static {
+         VMBridge.identifyClass(Object.class, "V6Kh6hDq");
+      }
+   },
+   LITEMATICA("litematic")   // $VF: Compiled from s
+ {
+      private static String бЦх = "";
+      private static String бЦЦ = "";
+      private static String бЦ9 = "";
+      private static String бЦЮ = "";
+
+      @Override
+      public IStaticSchematic parse(InputStream var1) throws IOException {
+         CompoundTag var2 = NbtIo.readCompressed(var1, NbtAccounter.unlimitedHeap());
+         int sx = var2.getInt(бЦх).orElse(-1);
+         switch (sx) {
+            case 4:
+            case 5:
+               throw new UnsupportedOperationException(бЦЦ);
+            case 6:
+               throw new UnsupportedOperationException(бЦ9);
+            case 7:
+               return new LitematicaSchematic(var2);
+            default:
+               throw new UnsupportedOperationException(бЦЮ);
+         }
+      }
+
+      static {
+         VMBridge.identifyClass(Object.class, "huq3Ur8y");
+      }
+   };
+
+   private final String extension;
+
+   DefaultSchematicFormats(String var3) {
+      this.extension = var3;
+   }
+
+   @Override
+   public boolean isFileType(File var1) {
+      return this.extension.equalsIgnoreCase(FilenameUtils.getExtension(var1.getAbsolutePath()));
+   }
+
+   @Override
+   public List<String> getFileExtensions() {
+      return Collections.singletonList(this.extension);
+   }
+}

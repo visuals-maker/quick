@@ -1,0 +1,28 @@
+// Original binary: hex/api/baritone/utils/pathing/MutableMoveResult
+package hex.api.baritone.utils.pathing;
+
+import ru.dreamix.fabricloader.VMBridge;
+
+// $VF: Compiled from s
+public final class MutableMoveResult {
+   public int x;
+   public int y;
+   public int z;
+   public double cost;
+   private static double бПь = 0.0;
+
+   public final void reset() {
+      this.x = 0;
+      this.y = 0;
+      this.z = 0;
+      this.cost = бПь;
+   }
+
+   static {
+      VMBridge.identifyClass(MutableMoveResult.class, "w23KEaE5");
+   }
+
+   public MutableMoveResult() {
+      this.reset();
+   }
+}
