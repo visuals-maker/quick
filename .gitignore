@@ -1,12 +1,20 @@
+# Gradle and build
 .gradle/
 build/
+bin/
+
+# Runtime and client local data
 run/
+run/**
+
+# IDE
 .idea/
 *.iml
 *.ipr
 *.iws
+.vscode/
 
-# Error triage dumps and temporary files
+# Dumps, logs and temporary files
 *.txt
 *.args
 *.log
