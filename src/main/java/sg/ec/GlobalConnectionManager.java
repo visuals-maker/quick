@@ -32,7 +32,7 @@ public class GlobalConnectionManager implements MinecraftAccess {
    public static volatile List<FunTimeServerData> field08662 = List.of();
    public static volatile long field08663 = 0L;
    private static final String field08664 = "DEV";
-   private static final String field08665 = "wss://slishykrikYBEI.crystall.space:25567";
+   private static final String field08665 = "";
    private static final double field08666 = 10000.0;
    private static final long field08667 = 5L;
    private static final long field08668 = 5L;
@@ -186,31 +186,7 @@ public class GlobalConnectionManager implements MinecraftAccess {
    }
 
    public static void method03860() {
-      try {
-         field08658 = false;
-         boolean var0 = ProfileAPI.get().getModel().getRole().priorityHigherOrEquals(RoleObject.ADMIN);
-         String var1 = false ? field08664 : ProfileAPI.get().getModel().getRole().toString();
-         String var2 = var0 ? null : "";
-         GlobalWebSocketClient var3 = new GlobalWebSocketClient(
-            URI.create(field08665),
-            GlobalPacketHandlerImpl::new,
-            ProfileAPI.get().getModel().getName(),
-            mc.getUser() != null ? mc.getUser().getName() : "Player" + (int)(Math.random() * field08666),
-            field08653,
-            var1,
-            var0,
-            var2,
-            ""
-         );
-         QuickClient.getInstance().setClient(var3);
-         var3.setSocketFactory(PinnedTlsSocketFactory.method07052());
-         var3.connect();
-         method03848();
-      } catch (Throwable var4) {
-         if (var4 instanceof RuntimeException var5) {
-            throw var5;
-         }
-         throw new RuntimeException(var4);
-      }
+      field08658 = true;
+      QuickClient.getInstance().setClient(null);
    }
 }
