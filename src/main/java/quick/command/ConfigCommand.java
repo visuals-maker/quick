@@ -1,7 +1,6 @@
 // Original binary: sg/ec/5AnwGLAbrlDG2b9A
 package quick.command;
 
-
 import quick.setting.BooleanSetting;
 import quick.setting.ColorSetting;
 import quick.setting.ItemFilterSetting;
@@ -16,6 +15,8 @@ import sg.ec.*;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.client.multiplayer.ClientSuggestionProvider;
@@ -39,7 +40,7 @@ public class ConfigCommand extends AbstractCommand {
    private static final String field02102 = "list";
    private static final String field02103 = "Loading config by key...";
    private static final String field02104 = "Globals is not connected.";
-   private static final String field02105 = "There are no cloud configs.";
+   private static final String field02105 = "There are no local configs.";
    private static final String field02106 = "name";
    private static final String field02107 = "Globals is not connected.";
    private static final String field02108 = "name";
@@ -82,18 +83,11 @@ public class ConfigCommand extends AbstractCommand {
       var1.then(this.literal(field02097).then(this.argument(field02098, StringArgumentType.string()).executes(var1x -> {
          String var2 = (String)var1x.getArgument(field02108, String.class);
          if (CustomResourceManager.INSTANCE.method02465(var2)) {
-            this.sendMessage("Config with the name:" + var2 + "Was saved.");
+            ActiveConfigTracker.field06857.setActiveConfig(var2);
+            this.sendMessage("Config \"" + var2 + "\" saved.");
+         } else {
+            this.sendMessage("Failed to save config \"" + var2 + "\".");
          }
-
-         GlobalWebSocketClient var3 = QuickClient.getInstance().getClient();
-         if (var3 != null && var3.isOpen()) {
-            byte[] var4 = ModuleConfigStorage.method04447();
-            if (var4.length > 0) {
-               var3.getManager().method01779(var2, var4);
-               StoredContentCache.method05219(StorageCategory.CONFIG, var2, var4);
-            }
-         }
-
          return 1;
       })));
       var1.then(this.literal(field02099).executes(var1x -> {
@@ -108,37 +102,28 @@ public class ConfigCommand extends AbstractCommand {
                   .executes(var1x -> {
                      String var2 = StringArgumentType.getString(var1x, field02106);
                      boolean sx = ConfigFileUtils.method07558(var2);
-                     GlobalWebSocketClient sxx = QuickClient.getInstance().getClient();
-                     if (sxx != null && sxx.isOpen()) {
-                        sxx.getManager().method01782(StorageCategory.CONFIG, var2);
-                        this.sendMessage("Config \"" + var2 + "\' deleted.");
-                     } else if (sx) {
-                        this.sendMessage("Config \"" + var2 + "\' deleted locally (Globals not connected).");
+                     if (sx) {
+                        if (ActiveConfigTracker.field06857.isActiveConfig(var2)) {
+                           ActiveConfigTracker.field06857.resetActiveConfig();
+                        }
+                        this.sendMessage("Config \"" + var2 + "\" deleted.");
                      } else {
-                        this.sendMessage(field02107);
+                        this.sendMessage("Config \"" + var2 + "\" not found.");
                      }
-
                      return 1;
                   })
             )
       );
       var1.then(this.literal(field02102).executes(var1x -> {
-         GlobalWebSocketClient var2 = this.method00923();
-         if (var2 == null) {
-            return 0;
-         }
-
-         var2.getManager().method01844();
-         List var3 = var2.getManager().method01793();
+         List<String> var3 = this.method00922();
          if (var3.isEmpty()) {
             this.sendMessage(field02105);
             return 1;
          }
 
-         this.sendMessage("Cloud configs (" + var3.size() + "):");
-
-         for (StoredContentInfo var5 : (Iterable<StoredContentInfo>)var3) {
-            this.sendMessage("- " + var5.name());
+         this.sendMessage("Local configs (" + var3.size() + "):");
+         for (String var5 : var3) {
+            this.sendMessage("- " + var5);
          }
 
          return 1;
@@ -146,16 +131,17 @@ public class ConfigCommand extends AbstractCommand {
    }
 
    private List<String> method00922() {
-      ArrayList var1 = new ArrayList();
-      GlobalWebSocketClient var2 = QuickClient.getInstance().getClient();
-      if (var2 == null) {
-         return var1;
+      ArrayList<String> var1 = new ArrayList<>();
+      File var2 = CustomResourceManager.INSTANCE.field05980;
+      if (var2.exists() && var2.isDirectory()) {
+         File[] var3 = var2.listFiles((dir, name) -> name.endsWith(".file"));
+         if (var3 != null) {
+            for (File var4 : var3) {
+               String name = var4.getName();
+               var1.add(name.substring(0, name.length() - 5));
+            }
+         }
       }
-
-      for (StoredContentInfo var4 : var2.getManager().method01793()) {
-         var1.add(var4.name());
-      }
-
       return var1;
    }
 
@@ -223,13 +209,29 @@ public class ConfigCommand extends AbstractCommand {
    }
 
    private int method00931(String var1) {
-      GlobalWebSocketClient var2 = this.method00923();
-      if (var2 == null) {
+      File var2 = new File(CustomResourceManager.INSTANCE.field05980, var1 + ".file");
+      if (var2.exists()) {
+         try (FileInputStream fis = new FileInputStream(var2)) {
+            byte[] bytes = fis.readAllBytes();
+            if (ModuleConfigStorage.method04450(bytes)) {
+               ActiveConfigTracker.field06857.setActiveConfig(var1);
+               this.sendMessage("Config \"" + var1 + "\" loaded successfully.");
+               return 1;
+            }
+         } catch (Exception ignored) {
+         }
+         this.sendMessage("Failed to load config \"" + var1 + "\".");
          return 0;
       }
 
-      var2.getManager().method01817(StorageCategory.CONFIG, var1);
-      this.sendMessage("Loading config \"" + var1 + "\'from the server...");
-      return 1;
+      GlobalWebSocketClient var3 = QuickClient.getInstance().getClient();
+      if (var3 != null && var3.isOpen()) {
+         var3.getManager().method01817(StorageCategory.CONFIG, var1);
+         this.sendMessage("Loading config \"" + var1 + "\" from the server...");
+         return 1;
+      }
+
+      this.sendMessage("Config \"" + var1 + "\" not found locally.");
+      return 0;
    }
 }

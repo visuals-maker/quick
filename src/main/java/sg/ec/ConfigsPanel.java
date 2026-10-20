@@ -1,6 +1,9 @@
 // Original binary: sg/ec/9iZc59m2tMquz7lo
 package sg.ec;
 
+import java.io.File;
+import java.io.FileInputStream;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -296,11 +299,6 @@ public class ConfigsPanel extends GuiPanel {
 
    private void method02281(String var1, GuiPanel.Nested283 var2, boolean var3) {
       ArrayList var4 = new ArrayList();
-      if (!var3) {
-         var4.add(new ScriptsWindow.Nested34(GuiIcon.SHARE, field05703, () -> this.method02285(var1)));
-         var4.add(new ScriptsWindow.Nested34(GuiIcon.CART, field05704, () -> this.method02295(var1)));
-      }
-
       var4.add(new ScriptsWindow.Nested34(GuiIcon.DELETE, field05705, () -> this.method02313(var1)));
       ScriptsWindow var5 = new ScriptsWindow(var4);
       this.field05503 = false;
@@ -387,18 +385,21 @@ public class ConfigsPanel extends GuiPanel {
    }
 
    private List<StoredContentInfo> method02294(ConfigsPanel.Nested65 var1) {
-      GlobalWebSocketClient var2 = QuickClient.getInstance().getClient();
-      if (var2 == null) {
-         return List.of();
-      }
-
-      List var3 = var1 == ConfigsPanel.Nested65.DELETED ? var2.getManager().method01876() : var2.getManager().method01830();
       String var4 = this.field05494.method09960().toLowerCase();
-      ArrayList var5 = new ArrayList();
-
-      for (StoredContentInfo var7 : (Iterable<StoredContentInfo>)var3) {
-         if (var7.category() == StorageCategory.CONFIG && (var4.isEmpty() || var7.name().toLowerCase().contains(var4))) {
-            var5.add(var7);
+      ArrayList<StoredContentInfo> var5 = new ArrayList<>();
+      if (var1 == ConfigsPanel.Nested65.CONFIGS) {
+         File varDir = CustomResourceManager.INSTANCE.field05980;
+         if (varDir.exists() && varDir.isDirectory()) {
+            File[] varFiles = varDir.listFiles((dir, name) -> name.endsWith(".file"));
+            if (varFiles != null) {
+               for (File f : varFiles) {
+                  String name = f.getName();
+                  String cfgName = name.substring(0, name.length() - 5);
+                  if (var4.isEmpty() || cfgName.toLowerCase().contains(var4)) {
+                     var5.add(new StoredContentInfo(StorageCategory.CONFIG, cfgName, f.length(), f.lastModified(), false));
+                  }
+               }
+            }
          }
       }
       var5.sort(switch (this.field05499) {
@@ -458,15 +459,7 @@ public class ConfigsPanel extends GuiPanel {
    }
 
    private void method02298(String var1) {
-      byte[] var2 = ModuleConfigStorage.method04444();
-      if (var2.length != 0) {
-         GlobalRequestSender.method09378(var2x -> {
-            var2x.method01880(var1, var2);
-            StoredContentCache.method05219(StorageCategory.CONFIG, var1, var2);
-            ConfigMarketState.field13926.method06278();
-            StoredContentImporter.method07240(StorageCategory.CONFIG, var1, ModuleConfigStorage.method04444());
-         });
-      }
+      this.method02312(var1);
    }
 
    private void method02299(
@@ -604,8 +597,15 @@ public class ConfigsPanel extends GuiPanel {
    }
 
    private void method02307(String var1) {
-      if (GlobalRequestSender.method09378(var1x -> var1x.method01817(StorageCategory.CONFIG, var1))) {
-         ActiveConfigTracker.field06857.setActiveConfig(var1);
+      File var2 = new File(CustomResourceManager.INSTANCE.field05980, var1 + ".file");
+      if (var2.exists()) {
+         try (FileInputStream fis = new FileInputStream(var2)) {
+            byte[] bytes = fis.readAllBytes();
+            if (ModuleConfigStorage.method04450(bytes)) {
+               ActiveConfigTracker.field06857.setActiveConfig(var1);
+            }
+         } catch (Exception ignored) {
+         }
       }
    }
 
@@ -666,12 +666,16 @@ public class ConfigsPanel extends GuiPanel {
    }
 
    private void method02312(String var1) {
-      this.method02325(var1, ModuleConfigStorage.method04447());
+      if (CustomResourceManager.INSTANCE.method02465(var1)) {
+         ActiveConfigTracker.field06857.setActiveConfig(var1);
+      }
    }
 
    private void method02313(String var1) {
-      if (GlobalRequestSender.method09378(var1x -> var1x.method01782(StorageCategory.CONFIG, var1)) && ActiveConfigTracker.field06857.isActiveConfig(var1)) {
-         ActiveConfigTracker.field06857.resetActiveConfig();
+      if (ConfigFileUtils.method07558(var1)) {
+         if (ActiveConfigTracker.field06857.isActiveConfig(var1)) {
+            ActiveConfigTracker.field06857.resetActiveConfig();
+         }
       }
    }
 

@@ -21,7 +21,7 @@ public final class ConfigMarketState {
    }
 
    public boolean method06277() {
-      return this.field13930;
+      return false;
    }
 
    public void method06278() {
@@ -30,42 +30,23 @@ public final class ConfigMarketState {
    }
 
    public void method06279(String var1) {
-      this.field13931 = var1 != null && !var1.equals(field13934) ? var1.trim() : "";
-      this.field13930 = true;
+      this.field13931 = "";
+      this.field13930 = false;
    }
 
    public void method06280(String var1) {
-      if (var1 != null && var1.startsWith(field13932)) {
-         this.method06279(var1.substring(field13933.length()));
-      } else {
-         this.method06278();
-      }
+      this.method06278();
    }
 
    public boolean method06281(String var1) {
-      if (var1 != null && !var1.isEmpty()) {
-         GlobalWebSocketClient var2 = QuickClient.getInstance().getClient();
-         if (var2 == null) {
-            return false;
-         }
-
-         for (StoredContentInfo var4 : var2.getManager().method01830()) {
-            if (var4.category() == StorageCategory.CONFIG && var4.name().equalsIgnoreCase(var1)) {
-               return var4.locked();
-            }
-         }
-
-         return false;
-      } else {
-         return false;
-      }
+      return false;
    }
 
    public String method06282() {
-      return this.field13930 && !this.field13931.isEmpty() ? this.field13931 : "";
+      return "";
    }
 
    public boolean method06283() {
-      return this.field13930 || this.method06281(ActiveConfigTracker.field06857.getActiveConfigName());
+      return false;
    }
 }
