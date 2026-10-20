@@ -47,7 +47,19 @@ import quick.core.BotClient;
 
 // $VF: Compiled from s
 public class Baritone implements IBaritone {
-   private static final ThreadPoolExecutor threadPool = new ThreadPoolExecutor(4, Baritone.maxThreadPoolSize, Baritone.threadKeepAliveSeconds, TimeUnit.SECONDS, new SynchronousQueue<>());
+   private static final ThreadPoolExecutor threadPool = new ThreadPoolExecutor(
+      4,
+      Integer.MAX_VALUE,
+      60L,
+      TimeUnit.SECONDS,
+      new SynchronousQueue<>(),
+      r -> {
+         Thread t = new Thread(r, "Baritone-Worker");
+         t.setDaemon(true);
+         return t;
+      },
+      new ThreadPoolExecutor.CallerRunsPolicy()
+   );
    private final Minecraft mc;
    private final Path directory;
    private final GameEventHandler gameEventHandler;
@@ -74,8 +86,8 @@ public class Baritone implements IBaritone {
    private boolean bsiAvailable;
    private static final String directoryName = "baritone";
    private static final long guiOpenDelay = 1000L;
-   private static final int maxThreadPoolSize = 10;
-   private static final long threadKeepAliveSeconds = 30L;
+   private static final int maxThreadPoolSize = Integer.MAX_VALUE;
+   private static final long threadKeepAliveSeconds = 60L;
 
    public <T extends IBaritoneProcess> T registerProcess(Function<Baritone, T> var1) {
       T var2 = var1.apply(this);

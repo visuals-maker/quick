@@ -122,18 +122,22 @@ public final class CachedWorld implements Helper, ICachedWorld {
       this.directory = var1.toString();
       this.dimension = var2;
       this.dimensionId = var3;
-      Baritone.getExecutor().execute(new CachedWorld.PackerThread());
-      Baritone.getExecutor().execute(() -> {
-         try {
-            Thread.sleep(Абт);
+      try {
+         Baritone.getExecutor().execute(new CachedWorld.PackerThread());
+      } catch (Throwable ignored) {}
+      try {
+         Baritone.getExecutor().execute(() -> {
+            try {
+               Thread.sleep(Абт);
 
-            while (true) {
-               this.save();
-               Thread.sleep(Абд);
+               while (true) {
+                  this.save();
+                  Thread.sleep(Абд);
+               }
+            } catch (InterruptedException var2x) {
             }
-         } catch (InterruptedException var2x) {
-         }
-      });
+         });
+      } catch (Throwable ignored) {}
    }
 
    private boolean isRegionInWorld(int var1, int var2) {

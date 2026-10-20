@@ -21,7 +21,7 @@ public class WorldData implements IWorldData {
    private static String бщ必 = "";
 
    public void onClose() {
-      Baritone.getExecutor().execute(() -> this.cache.save());
+      try { Baritone.getExecutor().execute(() -> this.cache.save()); } catch (Throwable ignored) {}
    }
 
    @Override
