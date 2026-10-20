@@ -14,7 +14,7 @@ import java.nio.file.NoSuchFileException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ExploreFilterCommand extends Command {
@@ -72,8 +72,7 @@ public class ExploreFilterCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(ExploreFilterCommand.class, "zJWyMgEW");
-   }
+      }
 
    @Override
    public String getShortDesc() {

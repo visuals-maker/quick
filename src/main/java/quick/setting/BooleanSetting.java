@@ -1,7 +1,7 @@
 // Original binary: sg/ec/NYGhBJf3ZpXL32RQ
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class BooleanSetting extends Setting<Boolean> {

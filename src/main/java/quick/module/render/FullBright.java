@@ -5,7 +5,7 @@ package quick.module.render;
 import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

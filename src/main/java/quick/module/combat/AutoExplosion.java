@@ -3,7 +3,7 @@ package quick.module.combat;
 
 
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;

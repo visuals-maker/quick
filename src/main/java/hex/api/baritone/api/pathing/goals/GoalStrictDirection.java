@@ -5,7 +5,7 @@ import hex.api.baritone.api.utils.BetterBlockPos;
 import hex.api.baritone.api.utils.SettingsUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalStrictDirection implements Goal {
@@ -19,8 +19,7 @@ public class GoalStrictDirection implements Goal {
    private static String АШЛ = "";
 
    static {
-      VMBridge.identifyClass(GoalStrictDirection.class, "qAY5XOG5");
-   }
+      }
 
    @Override
    public int hashCode() {

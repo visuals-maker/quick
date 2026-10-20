@@ -4,7 +4,7 @@ package quick.module.combat;
 
 import quick.setting.ModeSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.List;

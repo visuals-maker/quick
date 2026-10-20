@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.BaseFireBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class VecUtils {
@@ -33,8 +33,7 @@ public final class VecUtils {
    }
 
    static {
-      VMBridge.identifyClass(VecUtils.class, "GItS6fB3");
-   }
+      }
 
    public static Vec3 calculateBlockCenter(Level var0, BlockPos var1) {
       if (var1 instanceof BetterBlockPos) {

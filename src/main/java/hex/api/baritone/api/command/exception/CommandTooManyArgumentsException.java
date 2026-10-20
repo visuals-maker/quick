@@ -1,7 +1,7 @@
 // Original binary: hex/api/baritone/api/command/exception/CommandTooManyArgumentsException
 package hex.api.baritone.api.command.exception;
 
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class CommandTooManyArgumentsException extends CommandErrorMessageException {
@@ -12,6 +12,5 @@ public class CommandTooManyArgumentsException extends CommandErrorMessageExcepti
    }
 
    static {
-      VMBridge.identifyClass(CommandTooManyArgumentsException.class, "QDEX8TPJ");
-   }
+      }
 }

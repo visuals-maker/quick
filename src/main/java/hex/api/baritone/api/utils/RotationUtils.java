@@ -17,7 +17,7 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult.Type;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class RotationUtils {
@@ -195,8 +195,7 @@ public final class RotationUtils {
    }
 
    static {
-      VMBridge.identifyClass(RotationUtils.class, "1O2O1qDp");
-   }
+      }
 
    private RotationUtils() {
    }

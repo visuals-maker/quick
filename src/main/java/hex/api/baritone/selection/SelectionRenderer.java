@@ -8,8 +8,8 @@ import hex.api.baritone.api.event.listener.AbstractGameEventListener;
 import hex.api.baritone.api.selection.ISelection;
 import hex.api.baritone.utils.IRenderer;
 import net.minecraft.world.phys.AABB;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.BaritoneVertexConsumerAccess;
+
+import quick.core.BaritoneVertexConsumerAccess;
 
 // $VF: Compiled from s
 public class SelectionRenderer implements AbstractGameEventListener, IRenderer {
@@ -28,8 +28,7 @@ public class SelectionRenderer implements AbstractGameEventListener, IRenderer {
    }
 
    static {
-      VMBridge.identifyClass(SelectionRenderer.class, "pOBDDYOa");
-   }
+      }
 
    public static void renderSelections(PoseStack var0, ISelection[] var1) {
       float var2 = settings.selectionOpacity.value;

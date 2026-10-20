@@ -6,7 +6,7 @@ import quick.setting.ModeSetting;
 import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

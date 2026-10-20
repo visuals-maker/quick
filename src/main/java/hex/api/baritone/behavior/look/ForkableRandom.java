@@ -4,7 +4,7 @@ package hex.api.baritone.behavior.look;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.LongSupplier;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class ForkableRandom {
@@ -16,8 +16,7 @@ public final class ForkableRandom {
    private static long Ус = 0L;
 
    static {
-      VMBridge.identifyClass(ForkableRandom.class, "nL79OfkB");
-   }
+      }
 
    private ForkableRandom(long[] var1) {
       this.s = var1;

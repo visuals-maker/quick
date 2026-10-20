@@ -2,7 +2,7 @@
 package hex.api.baritone.api.command.exception;
 
 import hex.api.baritone.api.command.argument.ICommandArgument;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class CommandInvalidTypeException extends CommandInvalidArgumentException {
@@ -28,6 +28,5 @@ public class CommandInvalidTypeException extends CommandInvalidArgumentException
    }
 
    static {
-      VMBridge.identifyClass(CommandInvalidTypeException.class, "9gJR1Z2O");
-   }
+      }
 }

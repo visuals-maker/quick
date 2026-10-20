@@ -21,7 +21,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementDescend extends Movement {
@@ -157,8 +157,7 @@ public class MovementDescend extends Movement {
    }
 
    static {
-      VMBridge.identifyClass(MovementDescend.class, "eKuLuHaL");
-   }
+      }
 
    public boolean skipToAscend() {
       BlockPos var1 = this.dest.subtract(this.src.below()).offset(this.dest);

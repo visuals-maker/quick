@@ -3,7 +3,7 @@ package quick.module.player;
 
 
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.platform.Window;

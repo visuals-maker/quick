@@ -1,7 +1,7 @@
 // Original binary: sg/ec/Gfl81bYOibVzR5gB
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 

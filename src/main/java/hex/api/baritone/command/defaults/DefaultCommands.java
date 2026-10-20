@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class DefaultCommands {
@@ -84,6 +84,5 @@ public final class DefaultCommands {
    }
 
    static {
-      VMBridge.identifyClass(DefaultCommands.class, "ItDk3iho");
-   }
+      }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MirroredSchematic implements ISchematic {
@@ -49,8 +49,7 @@ public class MirroredSchematic implements ISchematic {
    }
 
    static {
-      VMBridge.identifyClass(MirroredSchematic.class, "Y9Vwcwf4");
-   }
+      }
 
    private static int mirrorX(int var0, int var1, Mirror var2) {
       switch (var2) {

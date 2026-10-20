@@ -35,7 +35,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class PathExecutor implements Helper, IPathExecutor {
@@ -332,8 +332,7 @@ public class PathExecutor implements Helper, IPathExecutor {
    }
 
    static {
-      VMBridge.identifyClass(PathExecutor.class, "tLYdQtko");
-   }
+      }
 
    private static boolean sprintableAscend(IPlayerContext var0, MovementTraverse var1, MovementAscend var2, IMovement var3) {
       if (!Baritone.settings().sprintAscends.value) {

@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.monster.spider.Spider;
 import net.minecraft.world.entity.monster.zombie.ZombifiedPiglin;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class Avoidance {
@@ -67,8 +67,7 @@ public class Avoidance {
    }
 
    static {
-      VMBridge.identifyClass(Avoidance.class, "8Qb9Ma83");
-   }
+      }
 
    public Avoidance(int var1, int var2, int var3, double var4, int var6) {
       this.centerX = var1;

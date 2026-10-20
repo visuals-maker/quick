@@ -4,7 +4,7 @@ package quick.module.render;
 
 import quick.setting.KeyBindSetting;
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.phys.Vec3;
 

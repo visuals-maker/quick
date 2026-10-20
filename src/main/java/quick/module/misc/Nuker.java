@@ -5,7 +5,7 @@ package quick.module.misc;
 import quick.command.NukerCommand;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.List;
 import net.minecraft.core.BlockPos;

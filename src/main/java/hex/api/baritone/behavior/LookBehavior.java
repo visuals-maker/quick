@@ -21,8 +21,8 @@ import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket;
 import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket.PosRot;
 import net.minecraft.network.protocol.game.ServerboundMovePlayerPacket.Rot;
 import net.minecraft.util.Mth;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.RotationManager;
+
+import quick.core.RotationManager;
 
 // $VF: Compiled from s
 public final class LookBehavior extends Behavior implements ILookBehavior {
@@ -43,8 +43,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
    }
 
    static {
-      VMBridge.identifyClass(LookBehavior.class, "0Ll5xzgd");
-   }
+      }
 
    @Override
    public void updateTarget(Rotation var1, boolean var2) {
@@ -86,7 +85,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
                if (this.ctx.player() != null) {
                   if (this.ctx.player() == this.ctx.minecraft().player) {
                      if (this.ctx.minecraft().isSameThread()) {
-                        RotationManager.method06547(new sg.ec.Rotation(this.target.rotation.getYaw(), this.target.rotation.getPitch()), б3Ц, 1, false);
+                        RotationManager.method06547(new quick.core.Rotation(this.target.rotation.getYaw(), this.target.rotation.getPitch()), б3Ц, 1, false);
                      }
                   } else {
                      Rotation var2 = this.processor.peekRotation(this.target.rotation);
@@ -168,8 +167,7 @@ public final class LookBehavior extends Behavior implements ILookBehavior {
       }
 
       static {
-         VMBridge.identifyClass(LookBehavior.AbstractAimProcessor.class, "zAXEsNyb");
-      }
+         }
 
       private float calculateMouseMove(float var1, float var2) {
          float var3 = var2 - var1;

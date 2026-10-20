@@ -6,7 +6,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.Vec3i;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.NotNull;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class BetterBlockPos extends BlockPos {
@@ -97,8 +97,7 @@ public final class BetterBlockPos extends BlockPos {
    }
 
    static {
-      VMBridge.identifyClass(BetterBlockPos.class, "4a4wjNAF");
-   }
+      }
 
    public static long longHash(int var0, int var1, int var2) {
       long var3 = б3ж;

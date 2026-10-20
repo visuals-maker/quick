@@ -8,7 +8,7 @@ import hex.api.baritone.api.command.exception.CommandException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class LitematicaCommand extends Command {
@@ -25,8 +25,7 @@ public class LitematicaCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(LitematicaCommand.class, "ENW2gzP6");
-   }
+      }
 
    @Override
    public void execute(String var1, IArgConsumer var2) throws CommandException {

@@ -1,7 +1,7 @@
 // Original binary: sg/ec/AiYDswbIbMb91HDa
 package quick.module.render;
 
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.List;

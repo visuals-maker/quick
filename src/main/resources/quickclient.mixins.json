@@ -233,6 +233,6 @@
     "ClientLevelMixin_1241",
     "FrustumMixin_1266"
   ],
-  "package": "sg.mx",
-  "plugin": "sg.ec.QuickClient$Nested22"
+  "package": "quick.mixin",
+  "plugin": "quick.core.QuickClient$Nested22"
 }

@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.EmptyLevelChunk;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class BackfillProcess extends BaritoneProcessHelper {
@@ -90,8 +90,7 @@ public final class BackfillProcess extends BaritoneProcessHelper {
    }
 
    static {
-      VMBridge.identifyClass(BackfillProcess.class, "YIsY1YFT");
-   }
+      }
 
    @Override
    public PathingCommand onTick(boolean var1, boolean var2) {

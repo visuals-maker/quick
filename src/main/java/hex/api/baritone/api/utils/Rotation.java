@@ -1,7 +1,7 @@
 // Original binary: hex/api/baritone/api/utils/Rotation
 package hex.api.baritone.api.utils;
 
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class Rotation {
@@ -54,8 +54,7 @@ public class Rotation {
    }
 
    static {
-      VMBridge.identifyClass(Rotation.class, "cuLgvcxL");
-   }
+      }
 
    public static float clampPitch(float var0) {
       return Math.max(у西, Math.min(ут, var0));

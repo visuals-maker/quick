@@ -28,7 +28,7 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementTraverse extends Movement {
@@ -207,8 +207,7 @@ public class MovementTraverse extends Movement {
    }
 
    static {
-      VMBridge.identifyClass(MovementTraverse.class, "2SJUZo5b");
-   }
+      }
 
    @Override
    public MovementState updateState(MovementState var1) {

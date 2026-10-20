@@ -2,7 +2,7 @@
 package hex.api.baritone.api.pathing.goals;
 
 import java.util.Arrays;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalComposite implements Goal {
@@ -27,8 +27,7 @@ public class GoalComposite implements Goal {
    }
 
    static {
-      VMBridge.identifyClass(GoalComposite.class, "FMwIHtpD");
-   }
+      }
 
    @Override
    public double heuristic(int var1, int var2, int var3) {

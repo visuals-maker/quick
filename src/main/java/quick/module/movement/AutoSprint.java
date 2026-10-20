@@ -3,7 +3,7 @@ package quick.module.movement;
 
 
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.List;
 import net.minecraft.client.player.LocalPlayer;

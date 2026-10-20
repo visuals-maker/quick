@@ -29,7 +29,7 @@ import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class GetToBlockProcess extends BaritoneProcessHelper implements IGetToBlockProcess {
@@ -132,8 +132,7 @@ public final class GetToBlockProcess extends BaritoneProcessHelper implements IG
    }
 
    static {
-      VMBridge.identifyClass(GetToBlockProcess.class, "xmwHEmrR");
-   }
+      }
 
    @Override
    public synchronized PathingCommand onTick(boolean var1, boolean var2) {

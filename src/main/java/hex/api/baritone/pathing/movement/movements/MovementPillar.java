@@ -26,7 +26,7 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementPillar extends Movement {
@@ -53,8 +53,7 @@ public class MovementPillar extends Movement {
    private static double бАа = 0.0;
 
    static {
-      VMBridge.identifyClass(MovementPillar.class, "I5qdnoBj");
-   }
+      }
 
    public static double cost(CalculationContext var0, int var1, int var2, int var3) {
       BlockState var4 = var0.get(var1, var2, var3);

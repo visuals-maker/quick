@@ -4,7 +4,7 @@ package quick.module.player;
 
 import quick.command.NotraceCommand;
 import quick.setting.MultiToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.Block;

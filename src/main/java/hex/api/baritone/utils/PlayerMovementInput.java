@@ -4,8 +4,8 @@ package hex.api.baritone.utils;
 import hex.api.baritone.api.utils.input.Input;
 import net.minecraft.client.player.ClientInput;
 import net.minecraft.world.phys.Vec2;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.PlayerInputEvent;
+
+import quick.core.PlayerInputEvent;
 
 // $VF: Compiled from s
 public class PlayerMovementInput extends ClientInput {
@@ -14,8 +14,7 @@ public class PlayerMovementInput extends ClientInput {
    private static double 诶хI = 0.0;
 
    static {
-      VMBridge.identifyClass(PlayerMovementInput.class, "BYR5a07F");
-   }
+      }
 
    PlayerMovementInput(InputOverrideHandler var1) {
       this.handler = var1;

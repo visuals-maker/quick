@@ -4,7 +4,7 @@ package quick.module.render;
 
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.List;
 import net.minecraft.util.Mth;

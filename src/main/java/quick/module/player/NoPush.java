@@ -3,7 +3,7 @@ package quick.module.player;
 
 
 import quick.setting.MultiToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.network.protocol.game.ClientboundEntityEventPacket;

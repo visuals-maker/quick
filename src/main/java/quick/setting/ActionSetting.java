@@ -1,7 +1,7 @@
 // Original binary: sg/ec/8yXoTKnZtE3lKULz
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class ActionSetting extends Setting<Runnable> {

@@ -4,7 +4,7 @@ package quick.module.movement;
 
 import quick.setting.ModeSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.core.BlockPos;
@@ -13,7 +13,7 @@ import net.minecraft.network.protocol.game.ServerboundUseItemPacket;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import sg.mx.MultiPlayerGameModeMixin_1262;
+import quick.mixin.MultiPlayerGameModeMixin_1262;
 
 // $VF: Compiled from s
 public class NoClip extends ClientModule {

@@ -3,7 +3,7 @@ package hex.api.baritone.pathing.calc.openset;
 
 import hex.api.baritone.pathing.calc.PathNode;
 import java.util.Arrays;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class BinaryHeapOpenSet implements IOpenSet {
@@ -50,8 +50,7 @@ public final class BinaryHeapOpenSet implements IOpenSet {
    }
 
    static {
-      VMBridge.identifyClass(BinaryHeapOpenSet.class, "7h8VmuuK");
-   }
+      }
 
    public BinaryHeapOpenSet() {
       this(1024);

@@ -5,7 +5,7 @@ import java.lang.management.ManagementFactory;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Locale;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class SystemUtil {
@@ -50,8 +50,7 @@ public class SystemUtil {
    }
 
    static {
-      VMBridge.identifyClass(SystemUtil.class, "qeCelbnd");
-   }
+      }
 
    public static boolean isWindows() {
       return OS_NAME.toLowerCase(Locale.ROOT).startsWith(衣l);

@@ -1,7 +1,7 @@
 // Original binary: sg/ec/tSsS5BX2t10g9Uv6
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class NumberSetting<T extends Number> extends Setting<T> {

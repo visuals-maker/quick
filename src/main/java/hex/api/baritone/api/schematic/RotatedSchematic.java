@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class RotatedSchematic implements ISchematic {
@@ -31,8 +31,7 @@ public class RotatedSchematic implements ISchematic {
    }
 
    static {
-      VMBridge.identifyClass(RotatedSchematic.class, "bTg0WRTg");
-   }
+      }
 
    private static List<BlockState> rotate(List<BlockState> var0, Rotation var1) {
       return var0 == null ? null : var0.stream().map(var1x -> rotate(var1x, var1)).collect(Collectors.toList());

@@ -4,7 +4,7 @@ package quick.module.combat;
 
 import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.inventory.Slot;

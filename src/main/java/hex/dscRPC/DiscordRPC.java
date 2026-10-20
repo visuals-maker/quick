@@ -7,7 +7,7 @@ import hex.dscRPC.modern.socket.ModernSystemSocketFactory;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class DiscordRPC {
@@ -55,8 +55,7 @@ public final class DiscordRPC {
    }
 
    static {
-      VMBridge.identifyClass(DiscordRPC.class, "zQ1CD3ry");
-   }
+      }
 
    private static void disconnect() {
       if (ipc != null) {

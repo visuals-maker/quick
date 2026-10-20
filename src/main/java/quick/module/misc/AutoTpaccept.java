@@ -3,7 +3,7 @@ package quick.module.misc;
 
 
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

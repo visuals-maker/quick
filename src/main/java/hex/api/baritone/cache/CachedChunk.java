@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.dimension.DimensionType;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class CachedChunk {
@@ -189,8 +189,7 @@ public final class CachedChunk {
    }
 
    static {
-      VMBridge.identifyClass(CachedChunk.class, "2kmzfEXf");
-   }
+      }
 
    public static int size(int var0) {
       return 512 * var0;

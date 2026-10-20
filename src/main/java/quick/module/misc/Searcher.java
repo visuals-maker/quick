@@ -3,7 +3,7 @@ package quick.module.misc;
 
 
 import quick.setting.KeyBindSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.ParseResults;
 import com.mojang.brigadier.StringReader;

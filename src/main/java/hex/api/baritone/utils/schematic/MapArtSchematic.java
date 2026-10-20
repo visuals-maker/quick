@@ -7,7 +7,7 @@ import java.util.OptionalInt;
 import java.util.function.Predicate;
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MapArtSchematic extends MaskSchematic {
@@ -38,8 +38,7 @@ public class MapArtSchematic extends MaskSchematic {
    }
 
    static {
-      VMBridge.identifyClass(MapArtSchematic.class, "0hRSJkDS");
-   }
+      }
 
    public MapArtSchematic(IStaticSchematic var1) {
       super(var1);

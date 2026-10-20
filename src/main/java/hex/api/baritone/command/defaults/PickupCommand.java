@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class PickupCommand extends Command {
@@ -27,8 +27,7 @@ public class PickupCommand extends Command {
    private static String Ф衣 = "";
 
    static {
-      VMBridge.identifyClass(PickupCommand.class, "AZvjl8yB");
-   }
+      }
 
    @Override
    public String getShortDesc() {

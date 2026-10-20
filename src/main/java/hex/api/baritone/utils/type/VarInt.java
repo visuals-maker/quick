@@ -3,7 +3,7 @@ package hex.api.baritone.utils.type;
 
 import it.unimi.dsi.fastutil.bytes.ByteArrayList;
 import it.unimi.dsi.fastutil.bytes.ByteList;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class VarInt {
@@ -21,8 +21,7 @@ public final class VarInt {
    }
 
    static {
-      VMBridge.identifyClass(VarInt.class, "s7BVFJfz");
-   }
+      }
 
    public final int getSize() {
       return this.size;

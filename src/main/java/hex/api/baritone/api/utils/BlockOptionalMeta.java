@@ -59,7 +59,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
-import ru.dreamix.fabricloader.VMBridge;
+
 import sun.misc.Unsafe;
 
 // $VF: Compiled from s
@@ -241,8 +241,7 @@ public final class BlockOptionalMeta {
    }
 
    static {
-      VMBridge.identifyClass(BlockOptionalMeta.class, "VUC4ZSkJ");
-   }
+      }
 
    public boolean matches(ItemStack var1) {
       int var2 = ((IItemStack)(Object)var1).getBaritoneHash();
@@ -289,8 +288,7 @@ public final class BlockOptionalMeta {
       }
 
       static {
-         VMBridge.identifyClass(BlockOptionalMeta.ServerLevelStub.class, "yoM9czYH");
-      }
+         }
 
       @Override
       public FeatureFlagSet enabledFeatures() {

@@ -4,9 +4,9 @@ package quick.module.combat;
 
 import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
-import sg.mx.MinecraftMixin;
+import quick.mixin.MinecraftMixin;
 
 // $VF: Compiled from s
 public class TapeMouse extends ClientModule {

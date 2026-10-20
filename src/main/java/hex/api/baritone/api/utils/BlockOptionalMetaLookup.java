@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class BlockOptionalMetaLookup {
@@ -39,8 +39,7 @@ public class BlockOptionalMetaLookup {
    }
 
    static {
-      VMBridge.identifyClass(BlockOptionalMetaLookup.class, "kDk2UVSm");
-   }
+      }
 
    public boolean has(ItemStack var1) {
       int var2 = ((IItemStack)(Object)var1).getBaritoneHash();

@@ -6,7 +6,7 @@ import quick.setting.ItemFilterSetting;
 import quick.setting.KeyBindSetting;
 import quick.setting.ModeSetting;
 import quick.setting.MultiToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.List;

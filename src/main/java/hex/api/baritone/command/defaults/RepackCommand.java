@@ -9,7 +9,7 @@ import hex.api.baritone.api.command.exception.CommandException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class RepackCommand extends Command {
@@ -47,6 +47,5 @@ public class RepackCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(RepackCommand.class, "YbwLKjhB");
-   }
+      }
 }

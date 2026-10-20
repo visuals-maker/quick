@@ -1,7 +1,7 @@
 // Original binary: sg/ec/teuZLX22W809mSnd
 package quick.command;
 
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import java.util.ArrayList;

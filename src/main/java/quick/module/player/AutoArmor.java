@@ -4,7 +4,7 @@ package quick.module.player;
 
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;

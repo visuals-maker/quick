@@ -5,7 +5,7 @@ import hex.api.baritone.api.utils.BetterBlockPos;
 import hex.api.baritone.api.utils.SettingsUtil;
 import hex.api.baritone.api.utils.interfaces.IGoalRenderPos;
 import net.minecraft.core.BlockPos;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalBlock implements IGoalRenderPos, Goal {
@@ -16,8 +16,7 @@ public class GoalBlock implements IGoalRenderPos, Goal {
    private static String бЦI = "";
 
    static {
-      VMBridge.identifyClass(GoalBlock.class, "aU5u6bcB");
-   }
+      }
 
    @Override
    public boolean isInGoal(int var1, int var2, int var3) {

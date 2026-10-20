@@ -21,7 +21,7 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.ClickEvent.RunCommand;
 import net.minecraft.network.chat.HoverEvent.ShowText;
 import net.minecraft.world.level.block.Block;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class FindCommand extends Command {
@@ -38,8 +38,7 @@ public class FindCommand extends Command {
    private static int 诶弟0 = 0;
 
    static {
-      VMBridge.identifyClass(FindCommand.class, "MFp1cK08");
-   }
+      }
 
    private Component positionToComponent(BetterBlockPos var1) {
       String var2 = String.format(诶弟Л, var1.x, var1.y, var1.z);

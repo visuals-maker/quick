@@ -4,7 +4,7 @@ package quick.module.player;
 
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;

@@ -31,8 +31,8 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.BaritoneVertexConsumerAccess;
+
+import quick.core.BaritoneVertexConsumerAccess;
 
 // $VF: Compiled from s
 public final class PathRenderer implements IRenderer {
@@ -215,8 +215,7 @@ public final class PathRenderer implements IRenderer {
    }
 
    static {
-      VMBridge.identifyClass(PathRenderer.class, "X9ztsfal");
-   }
+      }
 
    public static void render(RenderEvent var0, PathingBehavior var1) {
       IPlayerContext var2 = var1.ctx;

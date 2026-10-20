@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class JDiscordIPC implements DiscordEventListener, PacketHandler {
@@ -137,8 +137,7 @@ public class JDiscordIPC implements DiscordEventListener, PacketHandler {
    }
 
    static {
-      VMBridge.identifyClass(JDiscordIPC.class, "7cvkylNH");
-   }
+      }
 
    public JDiscordIPC(long var1, ReconnectPolicy var3, SystemSocket var4) {
       this.clientId = var1;

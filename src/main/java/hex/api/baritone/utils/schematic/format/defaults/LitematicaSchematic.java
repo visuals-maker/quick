@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
 import org.apache.commons.lang3.Validate;
 import org.jetbrains.annotations.Nullable;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class LitematicaSchematic extends CompositeSchematic implements IStaticSchematic {
@@ -48,8 +48,7 @@ public final class LitematicaSchematic extends CompositeSchematic implements ISt
    private static String ШХ = "";
 
    static {
-      VMBridge.identifyClass(LitematicaSchematic.class, "uYc6hqRh");
-   }
+      }
 
    @Override
    public BlockState getDirect(int var1, int var2, int var3) {
@@ -195,8 +194,7 @@ public final class LitematicaSchematic extends CompositeSchematic implements ISt
       }
 
       static {
-         VMBridge.identifyClass(LitematicaSchematic.LitematicaBitArray.class, "XmQUhKh5");
-      }
+         }
 
       public int getAt(long var1) {
          Validate.inclusiveBetween(0L, this.arraySize - 1L, var1);

@@ -1,7 +1,7 @@
 // Original binary: sg/ec/vNCvHgbY9JFtCEIn
 package quick.module.movement;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class AntiLevitation extends ClientModule {

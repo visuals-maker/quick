@@ -10,7 +10,7 @@ import hex.api.baritone.api.pathing.goals.GoalXZ;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ExploreCommand extends Command {
@@ -55,6 +55,5 @@ public class ExploreCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(ExploreCommand.class, "9ywE4cQF");
-   }
+      }
 }

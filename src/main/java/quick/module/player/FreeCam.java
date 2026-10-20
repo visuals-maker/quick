@@ -5,7 +5,7 @@ package quick.module.player;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.movement.Speed;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.CameraType;
 import net.minecraft.client.gui.GuiGraphicsExtractor;

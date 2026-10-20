@@ -8,7 +8,7 @@ import hex.api.baritone.api.command.exception.CommandException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ReloadAllCommand extends Command {
@@ -36,8 +36,7 @@ public class ReloadAllCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(ReloadAllCommand.class, "3NtySulB");
-   }
+      }
 
    @Override
    public List<String> getLongDesc() {

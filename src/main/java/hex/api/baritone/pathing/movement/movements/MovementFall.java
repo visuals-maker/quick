@@ -29,7 +29,7 @@ import net.minecraft.world.level.block.LadderBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.WaterFluid;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementFall extends Movement {
@@ -63,8 +63,7 @@ public class MovementFall extends Movement {
    }
 
    static {
-      VMBridge.identifyClass(MovementFall.class, "PNkXzb4n");
-   }
+      }
 
    @Override
    protected Set<BetterBlockPos> calculateValidPositions() {

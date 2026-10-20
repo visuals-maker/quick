@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.dimension.DimensionType;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class WorldData implements IWorldData {
@@ -42,6 +42,5 @@ public class WorldData implements IWorldData {
    }
 
    static {
-      VMBridge.identifyClass(WorldData.class, "0X2RbkId");
-   }
+      }
 }

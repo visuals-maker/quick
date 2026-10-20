@@ -21,19 +21,19 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.state.BlockState;
-import sg.ec.BotClient;
-import sg.ec.EventBus;
-import sg.ec.Subscribe;
-import sg.ec.Render3DEvent;
-import sg.ec.PostTickEvent;
-import sg.ec.CanSprintEvent;
-import sg.ec.BlockUpdateEvent;
-import sg.ec.MinecraftAccess;
-import sg.ec.BotSessionManager;
-import sg.ec.WorldLoadEvent;
-import sg.ec.ChunkDataEvent;
-import sg.ec.EntityDeathEvent;
-import sg.ec.ChatSendEvent;
+import quick.core.BotClient;
+import quick.core.EventBus;
+import quick.core.Subscribe;
+import quick.core.Render3DEvent;
+import quick.core.PostTickEvent;
+import quick.core.CanSprintEvent;
+import quick.core.BlockUpdateEvent;
+import quick.core.MinecraftAccess;
+import quick.core.BotSessionManager;
+import quick.core.WorldLoadEvent;
+import quick.core.ChunkDataEvent;
+import quick.core.EntityDeathEvent;
+import quick.core.ChatSendEvent;
 
 // $VF: Compiled from s
 public final class HexBaritone implements MinecraftAccess {
@@ -53,7 +53,7 @@ public final class HexBaritone implements MinecraftAccess {
    }
 
    @Subscribe
-   private void onGameTick(sg.ec.TickEvent var1) {
+   private void onGameTick(quick.core.TickEvent var1) {
       IBaritone var2 = activeIfPresent();
       if (var2 != null) {
          TickEvent.Type sx = tickType(var2);
@@ -124,7 +124,7 @@ public final class HexBaritone implements MinecraftAccess {
    }
 
    @Subscribe
-   private void onUpdate(sg.ec.PlayerUpdateEvent var1) {
+   private void onUpdate(quick.core.PlayerUpdateEvent var1) {
       IBaritone var2 = activeIfPresent();
       if (var2 != null) {
          var2.getGameEventHandler().onPlayerUpdate(new PlayerUpdateEvent(EventState.PRE));
@@ -132,7 +132,7 @@ public final class HexBaritone implements MinecraftAccess {
    }
 
    @Subscribe
-   private void onPacket(sg.ec.PacketEvent var1) {
+   private void onPacket(quick.core.PacketEvent var1) {
       if (var1.method10897() != null) {
          IBaritone var2 = activeIfPresent();
          if (var2 != null) {

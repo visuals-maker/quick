@@ -75,7 +75,7 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult.Type;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class BuilderProcess extends BaritoneProcessHelper implements IBuilderProcess {
@@ -558,8 +558,7 @@ public final class BuilderProcess extends BaritoneProcessHelper implements IBuil
    }
 
    static {
-      VMBridge.identifyClass(BuilderProcess.class, "Scs6A8w1");
-   }
+      }
 
    private void fullRecalc(BuilderProcess.BuilderCalculationContext var1) {
       this.incorrectPositions = new HashSet<>();
@@ -1006,8 +1005,7 @@ public final class BuilderProcess extends BaritoneProcessHelper implements IBuil
       }
 
       static {
-         VMBridge.identifyClass(BuilderProcess.BuilderCalculationContext.class, "x5Z75MOm");
-      }
+         }
    }
 
    // $VF: Compiled from s
@@ -1033,8 +1031,7 @@ public final class BuilderProcess extends BaritoneProcessHelper implements IBuil
       }
 
       static {
-         VMBridge.identifyClass(BuilderProcess.GoalAdjacent.class, "BqJMUqjl");
-      }
+         }
 
       @Override
       public boolean isInGoal(int var1, int var2, int var3) {
@@ -1099,8 +1096,7 @@ public final class BuilderProcess extends BaritoneProcessHelper implements IBuil
       }
 
       static {
-         VMBridge.identifyClass(BuilderProcess.GoalBreak.class, "zhBDSul3");
-      }
+         }
    }
 
    // $VF: Compiled from s
@@ -1128,8 +1124,7 @@ public final class BuilderProcess extends BaritoneProcessHelper implements IBuil
       }
 
       static {
-         VMBridge.identifyClass(BuilderProcess.GoalPlace.class, "F3Y1SzYR");
-      }
+         }
    }
 
    // $VF: Compiled from s
@@ -1170,8 +1165,7 @@ public final class BuilderProcess extends BaritoneProcessHelper implements IBuil
       }
 
       static {
-         VMBridge.identifyClass(BuilderProcess.JankyGoalComposite.class, "5P34tZrU");
-      }
+         }
 
       public JankyGoalComposite(Goal var1, Goal var2) {
          this.primary = var1;

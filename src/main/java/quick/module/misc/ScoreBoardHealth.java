@@ -1,7 +1,7 @@
 // Original binary: sg/ec/8U1bGH8G0DIFGBad
 package quick.module.misc;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class ScoreBoardHealth extends ClientModule {

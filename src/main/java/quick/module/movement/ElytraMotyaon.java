@@ -5,7 +5,7 @@ package quick.module.movement;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.combat.AttackAura;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.entity.LivingEntity;
 

@@ -4,7 +4,7 @@ package quick.module.misc;
 
 import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class Blink extends ClientModule {

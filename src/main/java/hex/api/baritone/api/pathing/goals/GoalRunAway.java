@@ -7,7 +7,7 @@ import it.unimi.dsi.fastutil.doubles.DoubleOpenHashSet;
 import java.util.Arrays;
 import java.util.Objects;
 import net.minecraft.core.BlockPos;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalRunAway implements Goal {
@@ -150,8 +150,7 @@ public class GoalRunAway implements Goal {
    }
 
    static {
-      VMBridge.identifyClass(GoalRunAway.class, "aqfBSC4s");
-   }
+      }
 
    public GoalRunAway(double var1, BlockPos... var3) {
       this(var1, null, var3);

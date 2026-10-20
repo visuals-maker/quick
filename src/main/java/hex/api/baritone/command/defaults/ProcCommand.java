@@ -12,7 +12,7 @@ import hex.api.baritone.api.process.PathingCommand;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ProcCommand extends Command {
@@ -52,8 +52,7 @@ public class ProcCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(ProcCommand.class, "kOae2sXV");
-   }
+      }
 
    @Override
    public String getShortDesc() {

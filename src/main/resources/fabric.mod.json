@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "sg.ec.QuickClient"
+      "quick.core.QuickClient"
     ]
   },
   "mixins": [

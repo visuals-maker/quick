@@ -3,7 +3,7 @@ package quick.module.combat;
 
 
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.nio.charset.StandardCharsets;
 import java.util.UUID;

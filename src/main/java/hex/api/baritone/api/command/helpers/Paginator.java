@@ -13,7 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.ClickEvent.RunCommand;
 import net.minecraft.network.chat.HoverEvent.ShowText;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class Paginator<E> implements Helper {
@@ -45,8 +45,7 @@ public class Paginator<E> implements Helper {
    }
 
    static {
-      VMBridge.identifyClass(Paginator.class, "TyjBO0IZ");
-   }
+      }
 
    public void display(Function<E, Component> var1, String var2) {
       int var3 = (this.page - 1) * this.pageSize;

@@ -5,7 +5,7 @@ package quick.module.player;
 import quick.setting.KeyBindSetting;
 import quick.setting.ModeSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;

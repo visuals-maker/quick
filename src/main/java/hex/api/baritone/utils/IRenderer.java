@@ -10,9 +10,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.rendertype.RenderType;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import sg.ec.BaritoneVertexConsumerAccess;
-import sg.ec.EffectRenderPipelines;
-import sg.ec.WorldVertexCollector;
+import quick.core.BaritoneVertexConsumerAccess;
+import quick.core.EffectRenderPipelines;
+import quick.core.WorldVertexCollector;
 
 // $VF: Compiled from s
 public interface IRenderer {

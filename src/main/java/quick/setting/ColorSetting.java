@@ -1,7 +1,7 @@
 // Original binary: sg/ec/yyMpAgYQ9yfUuRjG
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 import java.awt.Color;
 

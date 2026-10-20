@@ -1,7 +1,7 @@
 // Original binary: hex/dscRPC/exception/JDiscordIPCBuilderException
 package hex.dscRPC.exception;
 
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class JDiscordIPCBuilderException extends RuntimeException {
@@ -18,7 +18,6 @@ public class JDiscordIPCBuilderException extends RuntimeException {
       }
 
       static {
-         VMBridge.identifyClass(JDiscordIPCBuilderException.MissingSystemSocketFactoryException.class, "dZa4ym19");
-      }
+         }
    }
 }

@@ -4,7 +4,7 @@ package quick.module.player;
 
 import quick.setting.ModeSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
@@ -16,7 +16,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult.Type;
-import sg.mx.MultiPlayerGameModeMixin_1262;
+import quick.mixin.MultiPlayerGameModeMixin_1262;
 
 // $VF: Compiled from s
 public class AutoTool extends ClientModule {

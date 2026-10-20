@@ -1,7 +1,7 @@
 // Original binary: sg/ec/5KqU557PisLIlbYF
 package quick.module.misc;
 
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientboundSetHeldSlotPacket;

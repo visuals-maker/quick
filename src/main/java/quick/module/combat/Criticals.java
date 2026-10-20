@@ -4,7 +4,7 @@ package quick.module.combat;
 
 import quick.setting.MultiToggleSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.block.Blocks;
-import sg.mx.LocalPlayerMixin_1170;
+import quick.mixin.LocalPlayerMixin_1170;
 
 // $VF: Compiled from s
 public class Criticals extends ClientModule {

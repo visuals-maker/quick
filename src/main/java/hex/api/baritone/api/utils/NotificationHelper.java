@@ -8,7 +8,7 @@ import java.awt.TrayIcon;
 import java.awt.TrayIcon.MessageType;
 import java.io.IOException;
 import org.apache.commons.lang3.SystemUtils;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class NotificationHelper {
@@ -41,8 +41,7 @@ public class NotificationHelper {
    }
 
    static {
-      VMBridge.identifyClass(NotificationHelper.class, "hDkYxLCW");
-   }
+      }
 
    private static void linux(String var0) {
       ProcessBuilder var1 = new ProcessBuilder();

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.function.Consumer;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class PacketManager {
@@ -97,8 +97,7 @@ public class PacketManager {
    }
 
    static {
-      VMBridge.identifyClass(PacketManager.class, "SeQm3Sna");
-   }
+      }
 
    public void sendPacket(Packet var1) {
       try {

@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class SpongeSchematic extends StaticSchematic {
@@ -31,8 +31,7 @@ public final class SpongeSchematic extends StaticSchematic {
    private static String ббх = "";
 
    static {
-      VMBridge.identifyClass(SpongeSchematic.class, "kog0EXR6");
-   }
+      }
 
    public SpongeSchematic(CompoundTag var1) {
       this.x = var1.getInt(щщ).orElse(0);
@@ -147,8 +146,7 @@ public final class SpongeSchematic extends StaticSchematic {
       }
 
       static {
-         VMBridge.identifyClass(SpongeSchematic.SerializedBlockState.class, "17vpGrEV");
-      }
+         }
 
       private SerializedBlockState(Identifier var1, Map<String, String> var2) {
          this.identifier = var1;

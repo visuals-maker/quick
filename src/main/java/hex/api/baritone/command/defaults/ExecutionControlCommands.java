@@ -12,7 +12,7 @@ import hex.api.baritone.api.process.PathingCommandType;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ExecutionControlCommands {
@@ -33,8 +33,7 @@ public class ExecutionControlCommands {
    private static String field00045 = "";
 
    static {
-      VMBridge.identifyClass(ExecutionControlCommands.class, "Pc79cpfH");
-   }
+      }
 
    public ExecutionControlCommands(final IBaritone var1) {
       final boolean[] var2 = new boolean[]{false};
@@ -62,8 +61,7 @@ public class ExecutionControlCommands {
          }
 
          static {
-            VMBridge.identifyClass(Object.class, "T2sf3SqU");
-         }
+            }
 
          @Override
          public double priority() {
@@ -108,8 +106,7 @@ public class ExecutionControlCommands {
          }
 
          static {
-            VMBridge.identifyClass(Object.class, "pict4ZXo");
-         }
+            }
 
          @Override
          public Stream<String> tabComplete(String var1, IArgConsumer var2x) {
@@ -148,8 +145,7 @@ public class ExecutionControlCommands {
          }
 
          static {
-            VMBridge.identifyClass(Object.class, "mJstl4Oq");
-         }
+            }
 
          @Override
          public String getShortDesc() {
@@ -176,8 +172,7 @@ public class ExecutionControlCommands {
          }
 
          static {
-            VMBridge.identifyClass(Object.class, "aUsogCxK");
-         }
+            }
 
          @Override
          public List<String> getLongDesc() {
@@ -209,8 +204,7 @@ public class ExecutionControlCommands {
          }
 
          static {
-            VMBridge.identifyClass(Object.class, "PKeFAf4l");
-         }
+            }
 
          @Override
          public Stream<String> tabComplete(String var1, IArgConsumer var2x) {

@@ -3,7 +3,7 @@ package quick.module.player;
 
 
 import quick.setting.KeyBindSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -19,7 +19,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.alchemy.Potions;
-import sg.mx.MultiPlayerGameModeMixin_1262;
+import quick.mixin.MultiPlayerGameModeMixin_1262;
 
 // $VF: Compiled from s
 public class ItemHelper extends ClientModule {

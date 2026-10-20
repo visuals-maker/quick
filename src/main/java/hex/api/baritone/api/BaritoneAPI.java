@@ -3,7 +3,7 @@ package hex.api.baritone.api;
 
 import hex.api.baritone.BaritoneProvider;
 import hex.api.baritone.api.utils.SettingsUtil;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class BaritoneAPI {
@@ -21,8 +21,7 @@ public final class BaritoneAPI {
    }
 
    static {
-      VMBridge.identifyClass(BaritoneAPI.class, "KoG4UL0M");
-   }
+      }
 
    public static IBaritoneProvider getProvider() {
       return provider;

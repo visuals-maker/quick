@@ -22,7 +22,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementDiagonal extends Movement {
@@ -64,8 +64,7 @@ public class MovementDiagonal extends Movement {
    }
 
    static {
-      VMBridge.identifyClass(MovementDiagonal.class, "qNUDcOPd");
-   }
+      }
 
    private MovementDiagonal(IBaritone var1, BetterBlockPos var2, BetterBlockPos var3, BetterBlockPos var4, BetterBlockPos var5) {
       super(var1, var2, var3, new BetterBlockPos[]{var4, var4.above(), var5, var5.above(), var3, var3.above()});

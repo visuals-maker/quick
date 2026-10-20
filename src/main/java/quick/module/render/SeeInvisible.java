@@ -4,7 +4,7 @@ package quick.module.render;
 
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class SeeInvisible extends ClientModule {

@@ -5,6 +5,6 @@
   "injectors": {
     "defaultRequire": 1
   },
-  "package": "sg.mx",
-  "plugin": "sg.ec.QuickClient$Nested21"
+  "package": "quick.mixin",
+  "plugin": "quick.core.QuickClient$Nested21"
 }

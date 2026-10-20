@@ -26,7 +26,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class InventoryBehavior extends Behavior implements Helper {
@@ -125,8 +125,7 @@ public final class InventoryBehavior extends Behavior implements Helper {
    }
 
    static {
-      VMBridge.identifyClass(InventoryBehavior.class, "s929fFsI");
-   }
+      }
 
    public OptionalInt getTempHotbarSlot(Predicate<Integer> var1) {
       ArrayList var2 = new ArrayList<>();

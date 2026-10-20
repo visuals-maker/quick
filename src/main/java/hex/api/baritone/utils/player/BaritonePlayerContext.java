@@ -13,8 +13,8 @@ import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.HitResult;
-import sg.ec.BotClient;
-import sg.ec.BotSessionManager;
+import quick.core.BotClient;
+import quick.core.BotSessionManager;
 
 // $VF: Compiled from s
 public final class BaritonePlayerContext implements IPlayerContext {

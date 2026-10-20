@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.StringJoiner;
 import java.util.stream.Stream;
 import org.apache.commons.io.FilenameUtils;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class BuildCommand extends Command {
@@ -86,8 +86,7 @@ public class BuildCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(BuildCommand.class, "P15rKP0l");
-   }
+      }
 
    @Override
    public List<String> getLongDesc() {

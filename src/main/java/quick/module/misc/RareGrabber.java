@@ -6,7 +6,7 @@ import quick.setting.ModeSetting;
 import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;

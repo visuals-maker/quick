@@ -3,7 +3,7 @@ package quick.command;
 
 
 import quick.module.render.BlockESP;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;

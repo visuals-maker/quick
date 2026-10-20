@@ -7,7 +7,7 @@ import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.movement.Flight;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.IdentityHashMap;
@@ -37,8 +37,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.component.CustomModelData;
-import sg.mx.ItemCooldowns$CooldownInstanceMixin;
-import sg.mx.ItemCooldownsMixin;
+import quick.mixin.ItemCooldowns$CooldownInstanceMixin;
+import quick.mixin.ItemCooldownsMixin;
 
 // $VF: Compiled from s
 public class ServerHelper extends ClientModule {

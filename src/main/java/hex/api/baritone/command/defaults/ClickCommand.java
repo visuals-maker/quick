@@ -8,7 +8,7 @@ import hex.api.baritone.api.command.exception.CommandException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ClickCommand extends Command {
@@ -46,6 +46,5 @@ public class ClickCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(ClickCommand.class, "73daCp8m");
-   }
+      }
 }

@@ -5,7 +5,7 @@ package quick.module.player;
 import quick.setting.MultiToggleSetting;
 import quick.module.combat.AutoTotem;
 import quick.module.movement.Speed;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import net.minecraft.core.component.DataComponents;

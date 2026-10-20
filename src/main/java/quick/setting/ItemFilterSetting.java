@@ -1,7 +1,7 @@
 // Original binary: sg/ec/4agTTpQgYtSImPvw
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.function.Predicate;
 import net.minecraft.ChatFormatting;

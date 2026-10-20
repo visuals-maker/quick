@@ -8,7 +8,7 @@ import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.combat.AttackAura;
 import quick.module.combat.ElytraTarget;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.util.Mth;

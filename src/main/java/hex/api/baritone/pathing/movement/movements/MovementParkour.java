@@ -20,7 +20,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.WaterFluid;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementParkour extends Movement {
@@ -279,6 +279,5 @@ public class MovementParkour extends Movement {
    }
 
    static {
-      VMBridge.identifyClass(MovementParkour.class, "2qoIJ1o0");
-   }
+      }
 }

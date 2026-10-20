@@ -28,8 +28,8 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.ClickEvent.RunCommand;
 import net.minecraft.network.chat.HoverEvent.ShowText;
 import net.minecraft.util.Util;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.ClientFeaturePolicyEvent;
+
+import quick.core.ClientFeaturePolicyEvent;
 
 // $VF: Compiled from s
 public class ExampleBaritoneControl extends Behavior implements Helper {
@@ -51,8 +51,7 @@ public class ExampleBaritoneControl extends Behavior implements Helper {
    private static String ФВ = "";
 
    static {
-      VMBridge.identifyClass(ExampleBaritoneControl.class, "JJLQCVNF");
-   }
+      }
 
    @Override
    public void onPreTabComplete(TabCompleteEvent var1) {

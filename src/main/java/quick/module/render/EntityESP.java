@@ -3,7 +3,7 @@ package quick.module.render;
 
 
 import quick.setting.ActionSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import java.util.List;

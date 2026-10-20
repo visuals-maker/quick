@@ -22,7 +22,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.phys.AABB;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public abstract class Movement implements MovementHelper, IMovement {
@@ -234,8 +234,7 @@ public abstract class Movement implements MovementHelper, IMovement {
    }
 
    static {
-      VMBridge.identifyClass(Movement.class, "ZrrT5CyZ");
-   }
+      }
 
    public List<BlockPos> toWalkInto(BlockStateInterface var1) {
       if (this.toWalkIntoCached == null) {

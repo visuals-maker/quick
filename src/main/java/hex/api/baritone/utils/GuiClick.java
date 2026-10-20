@@ -30,8 +30,8 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult.Type;
 import org.joml.Matrix4f;
 import org.joml.Vector4f;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.BaritoneVertexConsumerAccess;
+
+import quick.core.BaritoneVertexConsumerAccess;
 
 // $VF: Compiled from s
 public class GuiClick extends Screen implements Helper {
@@ -62,8 +62,7 @@ public class GuiClick extends Screen implements Helper {
    }
 
    static {
-      VMBridge.identifyClass(GuiClick.class, "vaOMKZ7z");
-   }
+      }
 
    @Override
    public boolean mouseReleased(MouseButtonEvent var1) {

@@ -11,7 +11,7 @@ import hex.api.baritone.api.utils.PathCalculationResult;
 import hex.api.baritone.pathing.movement.CalculationContext;
 import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
 import java.util.Optional;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public abstract class AbstractNodeCostSearch implements IPathFinder, Helper {
@@ -191,8 +191,7 @@ public abstract class AbstractNodeCostSearch implements IPathFinder, Helper {
    }
 
    static {
-      VMBridge.identifyClass(AbstractNodeCostSearch.class, "BOUbFzAi");
-   }
+      }
 
    @Override
    public final Goal getGoal() {

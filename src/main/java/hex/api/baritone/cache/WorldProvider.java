@@ -17,7 +17,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.LevelResource;
 import org.apache.commons.lang3.SystemUtils;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class WorldProvider implements IWorldProvider {
@@ -90,8 +90,7 @@ public class WorldProvider implements IWorldProvider {
    }
 
    static {
-      VMBridge.identifyClass(WorldProvider.class, "864G28Sw");
-   }
+      }
 
    public final void initWorld(Level var1) {
       this.getSaveDirectories(var1).ifPresent(var2 -> {

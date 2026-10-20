@@ -9,7 +9,7 @@ import hex.api.baritone.api.command.exception.CommandInvalidStateException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class VersionCommand extends Command {
@@ -32,8 +32,7 @@ public class VersionCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(VersionCommand.class, "5OT48TWp");
-   }
+      }
 
    public VersionCommand(IBaritone var1) {
       super(var1, Аl4);

@@ -8,7 +8,7 @@ import hex.api.baritone.api.command.exception.CommandException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GcCommand extends Command {
@@ -20,8 +20,7 @@ public class GcCommand extends Command {
    private static String бУА = "";
 
    static {
-      VMBridge.identifyClass(GcCommand.class, "n2SI2CXJ");
-   }
+      }
 
    @Override
    public String getShortDesc() {

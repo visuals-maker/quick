@@ -10,7 +10,7 @@ import hex.api.baritone.utils.BaritoneProcessHelper;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.network.chat.Component;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class CustomGoalProcess extends BaritoneProcessHelper implements ICustomGoalProcess {
@@ -32,8 +32,7 @@ public final class CustomGoalProcess extends BaritoneProcessHelper implements IC
    }
 
    static {
-      VMBridge.identifyClass(CustomGoalProcess.class, "wBqlxdrq");
-   }
+      }
 
    public CustomGoalProcess(Baritone var1) {
       super(var1);

@@ -10,7 +10,7 @@ import hex.api.baritone.api.process.IGetToBlockProcess;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class BlacklistCommand extends Command {
@@ -28,8 +28,7 @@ public class BlacklistCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(BlacklistCommand.class, "x19mKQLy");
-   }
+      }
 
    @Override
    public List<String> getLongDesc() {

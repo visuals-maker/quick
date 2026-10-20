@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Objects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.ChunkPos;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class ExploreProcess extends BaritoneProcessHelper implements IExploreProcess {
@@ -111,8 +111,7 @@ public final class ExploreProcess extends BaritoneProcessHelper implements IExpl
    }
 
    static {
-      VMBridge.identifyClass(ExploreProcess.class, "sdnSnaOo");
-   }
+      }
 
    private Goal[] closestUncachedChunks(BlockPos var1, ExploreProcess.IChunkFilter var2) {
       int var3 = var1.getX() >> 4;
@@ -219,8 +218,7 @@ public final class ExploreProcess extends BaritoneProcessHelper implements IExpl
       }
 
       static {
-         VMBridge.identifyClass(ExploreProcess.BaritoneChunkCache.class, "zm28Wyio");
-      }
+         }
    }
 
    // $VF: Compiled from s
@@ -261,8 +259,7 @@ public final class ExploreProcess extends BaritoneProcessHelper implements IExpl
       private static final int бУИ = Integer.MAX_VALUE;
 
       static {
-         VMBridge.identifyClass(ExploreProcess.JsonChunkFilter.class, "nobGOsSk");
-      }
+         }
 
       @Override
       public int countRemain() {

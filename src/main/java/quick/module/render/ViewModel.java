@@ -5,7 +5,7 @@ package quick.module.render;
 import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
 import quick.module.combat.AttackAura;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.phys.Vec3;
 

@@ -42,7 +42,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class MineProcess extends BaritoneProcessHelper implements IMineProcess {
@@ -420,8 +420,7 @@ public final class MineProcess extends BaritoneProcessHelper implements IMinePro
    }
 
    static {
-      VMBridge.identifyClass(MineProcess.class, "c8WDwVEP");
-   }
+      }
 
    public static boolean plausibleToBreak(CalculationContext var0, BlockPos var1) {
       BlockState var2 = var0.bsi.get0(var1);
@@ -481,8 +480,7 @@ public final class MineProcess extends BaritoneProcessHelper implements IMinePro
       }
 
       static {
-         VMBridge.identifyClass(MineProcess.GoalThreeBlocks.class, "BdvsWDkg");
-      }
+         }
 
       @Override
       public boolean isInGoal(int var1, int var2, int var3) {

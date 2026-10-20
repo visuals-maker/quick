@@ -12,7 +12,7 @@ import hex.api.baritone.api.process.ICustomGoalProcess;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class InvertCommand extends Command {
@@ -25,8 +25,7 @@ public class InvertCommand extends Command {
    private static String АчЬ = "";
 
    static {
-      VMBridge.identifyClass(InvertCommand.class, "Bus04OiT");
-   }
+      }
 
    public InvertCommand(IBaritone var1) {
       super(var1, АчЪ);

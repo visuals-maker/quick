@@ -23,7 +23,7 @@ import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.dimension.DimensionType;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class CachedWorld implements Helper, ICachedWorld {
@@ -189,8 +189,7 @@ public final class CachedWorld implements Helper, ICachedWorld {
    }
 
    static {
-      VMBridge.identifyClass(CachedWorld.class, "dOTwK8Th");
-   }
+      }
 
    private long getRegionID(int var1, int var2) {
       return !this.isRegionInWorld(var1, var2) ? 0L : var1 & Абр | (var2 & Абй) << 32;

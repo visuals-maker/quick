@@ -13,7 +13,7 @@ import hex.api.baritone.utils.pathing.BetterWorldBorder;
 import hex.api.baritone.utils.pathing.Favoring;
 import hex.api.baritone.utils.pathing.MutableMoveResult;
 import java.util.Optional;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class AStarPathFinder extends AbstractNodeCostSearch {
@@ -27,8 +27,7 @@ public final class AStarPathFinder extends AbstractNodeCostSearch {
    private static double АчЙ = 0.0;
 
    static {
-      VMBridge.identifyClass(AStarPathFinder.class, "wTeiL8F8");
-   }
+      }
 
    public AStarPathFinder(BetterBlockPos var1, int var2, int var3, int var4, Goal var5, Favoring var6, CalculationContext var7) {
       super(var1, var2, var3, var4, var5, var7);

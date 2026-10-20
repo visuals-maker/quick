@@ -9,7 +9,7 @@ import hex.api.baritone.api.utils.BetterBlockPos;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class RenderCommand extends Command {
@@ -26,8 +26,7 @@ public class RenderCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(RenderCommand.class, "kfRFOtou");
-   }
+      }
 
    @Override
    public String getShortDesc() {

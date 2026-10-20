@@ -14,7 +14,7 @@ import hex.api.baritone.api.utils.BlockOptionalMeta;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GotoCommand extends Command {
@@ -65,6 +65,5 @@ public class GotoCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(GotoCommand.class, "WPbCgyGS");
-   }
+      }
 }

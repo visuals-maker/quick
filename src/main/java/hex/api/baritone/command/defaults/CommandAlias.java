@@ -7,7 +7,7 @@ import hex.api.baritone.api.command.argument.IArgConsumer;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class CommandAlias extends Command {
@@ -40,8 +40,7 @@ public class CommandAlias extends Command {
    }
 
    static {
-      VMBridge.identifyClass(CommandAlias.class, "9Mj6QI1y");
-   }
+      }
 
    @Override
    public List<String> getLongDesc() {

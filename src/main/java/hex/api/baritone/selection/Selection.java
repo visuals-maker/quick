@@ -6,7 +6,7 @@ import hex.api.baritone.api.utils.BetterBlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Vec3i;
 import net.minecraft.world.phys.AABB;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class Selection implements ISelection {
@@ -25,8 +25,7 @@ public class Selection implements ISelection {
    }
 
    static {
-      VMBridge.identifyClass(Selection.class, "dKfVPXTa");
-   }
+      }
 
    public Selection(BetterBlockPos var1, BetterBlockPos var2) {
       this.pos1 = var1;

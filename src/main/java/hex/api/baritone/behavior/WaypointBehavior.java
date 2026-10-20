@@ -19,7 +19,7 @@ import net.minecraft.network.chat.HoverEvent.ShowText;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BedPart;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class WaypointBehavior extends Behavior {
@@ -52,8 +52,7 @@ public class WaypointBehavior extends Behavior {
    }
 
    static {
-      VMBridge.identifyClass(WaypointBehavior.class, "HVr2hPlL");
-   }
+      }
 
    @Override
    public void onBlockInteract(BlockInteractEvent var1) {

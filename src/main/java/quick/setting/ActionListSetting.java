@@ -1,7 +1,7 @@
 // Original binary: sg/ec/BJkfkYH9RbWdpHsT
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.List;

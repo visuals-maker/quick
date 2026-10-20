@@ -18,8 +18,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.chunk.LevelChunkSection;
 import net.minecraft.world.level.chunk.status.ChunkStatus;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.BotClientLevel;
+
+import quick.core.BotClientLevel;
 
 // $VF: Compiled from s
 public class BlockStateInterface {
@@ -55,8 +55,7 @@ public class BlockStateInterface {
    }
 
    static {
-      VMBridge.identifyClass(BlockStateInterface.class, "FqMB1H31");
-   }
+      }
 
    public BlockState get0(BlockPos var1) {
       return this.get0(var1.getX(), var1.getY(), var1.getZ());

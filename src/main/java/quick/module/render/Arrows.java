@@ -6,7 +6,7 @@ import quick.setting.ColorSetting;
 import quick.setting.ModeSetting;
 import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.awt.Color;
 import java.util.HashMap;

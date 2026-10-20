@@ -6,7 +6,7 @@ import hex.api.baritone.api.utils.BetterBlockPos;
 import hex.api.baritone.api.utils.SettingsUtil;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalXZ implements Goal {
@@ -20,8 +20,7 @@ public class GoalXZ implements Goal {
    private static final double 诶Рч = 2.0;
 
    static {
-      VMBridge.identifyClass(GoalXZ.class, "vK8KNytx");
-   }
+      }
 
    public GoalXZ(int var1, int var2) {
       this.x = var1;

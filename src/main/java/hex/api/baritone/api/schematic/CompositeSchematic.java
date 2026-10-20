@@ -4,7 +4,7 @@ package hex.api.baritone.api.schematic;
 import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class CompositeSchematic extends AbstractSchematic {
@@ -46,8 +46,7 @@ public class CompositeSchematic extends AbstractSchematic {
    }
 
    static {
-      VMBridge.identifyClass(CompositeSchematic.class, "m772dw5T");
-   }
+      }
 
    @Override
    public BlockState desiredState(int var1, int var2, int var3, BlockState var4, List<BlockState> var5) {

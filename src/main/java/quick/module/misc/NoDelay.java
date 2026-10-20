@@ -4,12 +4,12 @@ package quick.module.misc;
 
 import quick.setting.MultiToggleSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import sg.mx.LivingEntityMixin_1248;
+import quick.mixin.LivingEntityMixin_1248;
 
 // $VF: Compiled from s
 public class NoDelay extends ClientModule {

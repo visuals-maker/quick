@@ -15,7 +15,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtAccounter;
 import net.minecraft.nbt.NbtIo;
 import org.apache.commons.io.FilenameUtils;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public enum DefaultSchematicFormats implements ISchematicFormat {
@@ -45,8 +45,7 @@ public enum DefaultSchematicFormats implements ISchematicFormat {
       }
 
       static {
-         VMBridge.identifyClass(Object.class, "V6Kh6hDq");
-      }
+         }
    },
    LITEMATICA("litematic")   // $VF: Compiled from s
  {
@@ -73,8 +72,7 @@ public enum DefaultSchematicFormats implements ISchematicFormat {
       }
 
       static {
-         VMBridge.identifyClass(Object.class, "huq3Ur8y");
-      }
+         }
    };
 
    private final String extension;

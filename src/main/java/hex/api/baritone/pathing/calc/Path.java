@@ -15,7 +15,7 @@ import hex.api.baritone.utils.pathing.PathBase;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 class Path extends PathBase {
@@ -43,8 +43,7 @@ class Path extends PathBase {
    }
 
    static {
-      VMBridge.identifyClass(Path.class, "4vF4cDM9");
-   }
+      }
 
    @Override
    public IPath postProcess() {

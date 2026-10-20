@@ -5,7 +5,7 @@ package quick.module.misc;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.movement.Flight;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.EnumSet;

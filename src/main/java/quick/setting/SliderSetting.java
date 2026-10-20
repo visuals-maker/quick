@@ -1,7 +1,7 @@
 // Original binary: sg/ec/28x9ce7xS8WO9EHZ
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.util.Mth;
 

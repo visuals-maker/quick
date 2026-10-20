@@ -3,7 +3,7 @@ package quick.module.movement;
 
 
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

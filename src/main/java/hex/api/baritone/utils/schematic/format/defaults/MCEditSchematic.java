@@ -10,7 +10,7 @@ import net.minecraft.util.datafix.fixes.ItemIdFix;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class MCEditSchematic extends StaticSchematic {
@@ -64,6 +64,5 @@ public final class MCEditSchematic extends StaticSchematic {
    }
 
    static {
-      VMBridge.identifyClass(MCEditSchematic.class, "bgAY5evz");
-   }
+      }
 }

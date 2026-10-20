@@ -3,7 +3,7 @@ package quick.module.misc;
 
 
 import quick.setting.MultiToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.google.common.collect.Lists;
 import java.util.ArrayList;

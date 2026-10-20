@@ -26,7 +26,7 @@ import net.minecraft.world.item.enchantment.effects.EnchantmentAttributeEffect;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class CalculationContext {
@@ -111,8 +111,7 @@ public class CalculationContext {
    }
 
    static {
-      VMBridge.identifyClass(CalculationContext.class, "FQaEqLZj");
-   }
+      }
 
    public Block getBlock(int var1, int var2, int var3) {
       return this.get(var1, var2, var3).getBlock();

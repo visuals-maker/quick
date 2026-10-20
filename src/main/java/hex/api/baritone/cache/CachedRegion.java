@@ -25,7 +25,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.dimension.DimensionType;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class CachedRegion implements ICachedRegion {
@@ -173,8 +173,7 @@ public final class CachedRegion implements ICachedRegion {
    }
 
    static {
-      VMBridge.identifyClass(CachedRegion.class, "38uL2sXH");
-   }
+      }
 
    public final synchronized void updateCachedChunk(int var1, int var2, CachedChunk var3) {
       this.chunks[var1][var2] = var3;

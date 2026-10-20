@@ -3,7 +3,7 @@ package quick.module.movement;
 
 
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.network.protocol.Packet;
@@ -14,7 +14,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
-import sg.mx.LivingEntityMixin_1248;
+import quick.mixin.LivingEntityMixin_1248;
 
 // $VF: Compiled from s
 public class GrimGlide extends ClientModule {

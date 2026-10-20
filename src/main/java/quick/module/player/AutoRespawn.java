@@ -1,7 +1,7 @@
 // Original binary: sg/ec/WABTDuUoU2eciHZm
 package quick.module.player;
 
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.gui.screens.DeathScreen;
 import net.minecraft.client.gui.screens.Screen;

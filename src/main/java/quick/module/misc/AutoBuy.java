@@ -3,7 +3,7 @@ package quick.module.misc;
 
 
 import quick.setting.ActionSetting;
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class AutoBuy extends ClientModule {

@@ -3,7 +3,7 @@ package quick.command;
 
 
 import quick.module.player.NoTrace;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import java.util.ArrayList;

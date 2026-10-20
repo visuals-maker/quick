@@ -1,7 +1,7 @@
 // Original binary: hex/dscRPC/exception/JDiscordIPCException
 package hex.dscRPC.exception;
 
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class JDiscordIPCException extends Exception {
@@ -18,7 +18,6 @@ public class JDiscordIPCException extends Exception {
       }
 
       static {
-         VMBridge.identifyClass(JDiscordIPCException.DiscordClientUnavailableException.class, "NKD2NbNu");
-      }
+         }
    }
 }

@@ -47,8 +47,8 @@ import net.minecraft.core.Direction.Axis;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.BaritoneVertexConsumerAccess;
+
+import quick.core.BaritoneVertexConsumerAccess;
 
 // $VF: Compiled from s
 public class SelCommand extends Command {
@@ -110,8 +110,7 @@ public class SelCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(SelCommand.class, "QEmOPyVI");
-   }
+      }
 
    @Override
    public void execute(String var1, IArgConsumer var2) throws CommandException {

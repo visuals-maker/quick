@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 import net.minecraft.world.level.block.AirBlock;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class SurfaceCommand extends Command {
@@ -29,8 +29,7 @@ public class SurfaceCommand extends Command {
    private static String ббс = "";
 
    static {
-      VMBridge.identifyClass(SurfaceCommand.class, "v1yetMtU");
-   }
+      }
 
    @Override
    public void execute(String var1, IArgConsumer var2) throws CommandException {

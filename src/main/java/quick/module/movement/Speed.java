@@ -6,7 +6,7 @@ import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.combat.AttackAura;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.List;
 import net.minecraft.network.protocol.game.ClientboundPlayerPositionPacket;

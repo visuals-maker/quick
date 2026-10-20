@@ -4,7 +4,7 @@ package quick.module.movement;
 
 import quick.setting.NumberSetting;
 import quick.module.combat.Velocity;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.phys.Vec3;
 

@@ -5,7 +5,7 @@ import hex.api.baritone.Baritone;
 import hex.api.baritone.api.process.PathingCommand;
 import hex.api.baritone.api.process.PathingCommandType;
 import hex.api.baritone.utils.BaritoneProcessHelper;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class InventoryPauserProcess extends BaritoneProcessHelper {
@@ -74,6 +74,5 @@ public class InventoryPauserProcess extends BaritoneProcessHelper {
    }
 
    static {
-      VMBridge.identifyClass(InventoryPauserProcess.class, "aMs6XdF1");
-   }
+      }
 }

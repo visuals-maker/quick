@@ -6,7 +6,7 @@ import hex.api.baritone.api.command.argument.ICommandArgument;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class DefaultArgParsers {
@@ -56,8 +56,7 @@ public class DefaultArgParsers {
       private static String Ауо = "";
 
       static {
-         VMBridge.identifyClass(DefaultArgParsers.BooleanArgumentParser.class, "GOjb52Ax");
-      }
+         }
 
       public Boolean parseArg(ICommandArgument var1) throws RuntimeException {
          String var2 = var1.getValue();

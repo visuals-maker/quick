@@ -6,7 +6,7 @@ import java.util.Map;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class BlockUtils {
@@ -25,8 +25,7 @@ public class BlockUtils {
    }
 
    static {
-      VMBridge.identifyClass(BlockUtils.class, "yttWn5bi");
-   }
+      }
 
    public static String blockToString(Block var0) {
       Identifier var1 = BuiltInRegistries.BLOCK.getKey(var0);

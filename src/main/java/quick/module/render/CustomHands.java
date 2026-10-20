@@ -8,7 +8,7 @@ import quick.setting.NumberSetting;
 import quick.setting.SliderSetting;
 import quick.setting.ToggleSetting;
 import quick.module.movement.Speed;
-import sg.ec.*;
+import quick.core.*;
 
 import java.awt.Color;
 

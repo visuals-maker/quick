@@ -21,7 +21,7 @@ import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.minecraft.world.item.enchantment.effects.EnchantmentAttributeEffect;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ToolSet {
@@ -142,8 +142,7 @@ public class ToolSet {
    }
 
    static {
-      VMBridge.identifyClass(ToolSet.class, "4TV0Th5e");
-   }
+      }
 
    private int getMaterialCost(ItemStack var1) {
       for (int var2 = 0; var2 < materialTagsPriorityList.size(); var2++) {

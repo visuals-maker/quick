@@ -3,7 +3,7 @@ package quick.module.misc;
 
 
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.network.protocol.game.ClientboundLevelParticlesPacket;
 

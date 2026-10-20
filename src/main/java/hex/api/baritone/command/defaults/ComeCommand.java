@@ -9,7 +9,7 @@ import hex.api.baritone.api.pathing.goals.GoalBlock;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ComeCommand extends Command {
@@ -27,8 +27,7 @@ public class ComeCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(ComeCommand.class, "hqLZQXsq");
-   }
+      }
 
    @Override
    public Stream<String> tabComplete(String var1, IArgConsumer var2) {

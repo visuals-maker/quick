@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MineCommand extends Command {
@@ -40,8 +40,7 @@ public class MineCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(MineCommand.class, "iffg34h9");
-   }
+      }
 
    @Override
    public void execute(String var1, IArgConsumer var2) throws CommandException {

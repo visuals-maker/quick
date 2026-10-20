@@ -5,7 +5,7 @@ package quick.module.combat;
 import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

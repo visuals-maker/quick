@@ -4,7 +4,7 @@ package quick.module.misc;
 
 import quick.setting.ModeSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
@@ -19,7 +19,7 @@ import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import sg.mx.MinecraftMixin;
+import quick.mixin.MinecraftMixin;
 
 // $VF: Compiled from s
 public class ServerJoiner extends ClientModule {

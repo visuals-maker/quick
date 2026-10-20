@@ -22,7 +22,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class WaypointCollection implements IWaypointCollection {
@@ -90,8 +90,7 @@ public class WaypointCollection implements IWaypointCollection {
    }
 
    static {
-      VMBridge.identifyClass(WaypointCollection.class, "NtKi16q7");
-   }
+      }
 
    private void load() {
       for (IWaypoint.Tag var4 : IWaypoint.Tag.values()) {

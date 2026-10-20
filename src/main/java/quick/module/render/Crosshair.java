@@ -5,7 +5,7 @@ package quick.module.render;
 import quick.setting.ColorSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.awt.Color;
 import net.minecraft.client.CameraType;

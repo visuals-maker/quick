@@ -4,7 +4,7 @@ package quick.module.misc;
 
 import quick.setting.ModeSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.awt.Color;
 import java.util.ArrayList;

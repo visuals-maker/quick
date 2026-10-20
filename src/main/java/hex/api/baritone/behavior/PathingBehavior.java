@@ -32,7 +32,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class PathingBehavior extends Behavior implements IPathingBehavior, Helper {
@@ -565,8 +565,7 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
    }
 
    static {
-      VMBridge.identifyClass(PathingBehavior.class, "27s4wE9P");
-   }
+      }
 
    private void resetEstimatedTicksToGoal(BlockPos var1) {
       this.resetEstimatedTicksToGoal(new BetterBlockPos(var1));

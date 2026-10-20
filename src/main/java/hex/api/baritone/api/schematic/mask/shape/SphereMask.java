@@ -3,7 +3,7 @@ package hex.api.baritone.api.schematic.mask.shape;
 
 import hex.api.baritone.api.schematic.mask.AbstractMask;
 import hex.api.baritone.api.schematic.mask.StaticMask;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class SphereMask extends AbstractMask implements StaticMask {
@@ -47,6 +47,5 @@ public final class SphereMask extends AbstractMask implements StaticMask {
    }
 
    static {
-      VMBridge.identifyClass(SphereMask.class, "9heQjAsL");
-   }
+      }
 }

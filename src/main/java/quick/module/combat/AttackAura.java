@@ -7,7 +7,7 @@ import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.movement.Speed;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,8 +34,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Vector2f;
-import sg.mx.ItemInHandRendererMixin_1191;
-import sg.mx.LivingEntityMixin_1248;
+import quick.mixin.ItemInHandRendererMixin_1191;
+import quick.mixin.LivingEntityMixin_1248;
 
 // $VF: Compiled from s
 public class AttackAura extends ClientModule {

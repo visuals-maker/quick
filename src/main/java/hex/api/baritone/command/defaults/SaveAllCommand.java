@@ -8,7 +8,7 @@ import hex.api.baritone.api.command.exception.CommandException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class SaveAllCommand extends Command {
@@ -30,8 +30,7 @@ public class SaveAllCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(SaveAllCommand.class, "W2H0keBC");
-   }
+      }
 
    @Override
    public void execute(String var1, IArgConsumer var2) throws CommandException {

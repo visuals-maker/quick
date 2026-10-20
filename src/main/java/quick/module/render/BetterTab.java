@@ -4,7 +4,7 @@ package quick.module.render;
 
 import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.HashMap;
 import java.util.HashSet;

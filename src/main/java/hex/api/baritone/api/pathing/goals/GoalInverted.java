@@ -2,7 +2,7 @@
 package hex.api.baritone.api.pathing.goals;
 
 import java.util.Objects;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalInverted implements Goal {
@@ -16,8 +16,7 @@ public class GoalInverted implements Goal {
    }
 
    static {
-      VMBridge.identifyClass(GoalInverted.class, "p44HBXqC");
-   }
+      }
 
    public GoalInverted(Goal var1) {
       this.origin = var1;

@@ -38,7 +38,7 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.ClickEvent.RunCommand;
 import net.minecraft.network.chat.ClickEvent.SuggestCommand;
 import net.minecraft.network.chat.HoverEvent.ShowText;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class WaypointsCommand extends Command {
@@ -324,8 +324,7 @@ public class WaypointsCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(WaypointsCommand.class, "34CLAp7M");
-   }
+      }
 
    public WaypointsCommand(IBaritone var1) {
       super(var1, бяД, бяН, бяш);

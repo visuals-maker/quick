@@ -1,7 +1,7 @@
 // Original binary: sg/ec/VzcLpy7fVXIVlCwD
 package quick.module.combat;
 
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.entity.player.Player;
 

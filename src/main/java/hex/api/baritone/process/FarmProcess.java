@@ -46,7 +46,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class FarmProcess extends BaritoneProcessHelper implements IFarmProcess {
@@ -130,8 +130,7 @@ public final class FarmProcess extends BaritoneProcessHelper implements IFarmPro
    }
 
    static {
-      VMBridge.identifyClass(FarmProcess.class, "g2v1JVkO");
-   }
+      }
 
    @Override
    public PathingCommand onTick(boolean var1, boolean var2) {

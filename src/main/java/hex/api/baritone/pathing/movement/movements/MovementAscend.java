@@ -17,7 +17,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementAscend extends Movement {
@@ -54,8 +54,7 @@ public class MovementAscend extends Movement {
    }
 
    static {
-      VMBridge.identifyClass(MovementAscend.class, "PvQgqwVs");
-   }
+      }
 
    @Override
    public boolean safeToCancel(MovementState var1) {

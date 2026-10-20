@@ -10,7 +10,7 @@ import hex.api.baritone.api.pathing.goals.GoalAxis;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class AxisCommand extends Command {
@@ -45,8 +45,7 @@ public class AxisCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(AxisCommand.class, "9TbabCq5");
-   }
+      }
 
    @Override
    public List<String> getLongDesc() {

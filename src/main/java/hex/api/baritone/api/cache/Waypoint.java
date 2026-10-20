@@ -3,7 +3,7 @@ package hex.api.baritone.api.cache;
 
 import hex.api.baritone.api.utils.BetterBlockPos;
 import java.util.Date;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class Waypoint implements IWaypoint {
@@ -35,8 +35,7 @@ public class Waypoint implements IWaypoint {
    }
 
    static {
-      VMBridge.identifyClass(Waypoint.class, "AwpaJ0bz");
-   }
+      }
 
    @Override
    public boolean equals(Object var1) {

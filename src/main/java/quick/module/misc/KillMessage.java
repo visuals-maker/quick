@@ -6,7 +6,7 @@ import quick.setting.ActionSetting;
 import quick.setting.ModeSetting;
 import quick.setting.ToggleSetting;
 import quick.module.combat.AttackAura;
-import sg.ec.*;
+import quick.core.*;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

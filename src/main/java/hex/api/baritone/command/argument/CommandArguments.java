@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class CommandArguments {
@@ -26,8 +26,7 @@ public final class CommandArguments {
    }
 
    static {
-      VMBridge.identifyClass(CommandArguments.class, "1degsqNu");
-   }
+      }
 
    public static List<ICommandArgument> from(String var0, boolean var1) {
       List var2 = new ArrayList<>();

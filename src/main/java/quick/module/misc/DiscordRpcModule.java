@@ -3,14 +3,14 @@ package quick.module.misc;
 
 
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import hex.dscRPC.DiscordRPC;
 import hex.dscRPC.activity.model.Activity;
 import hex.dscRPC.activity.model.ActivityTimestamps;
 import java.time.Instant;
 import net.minecraft.client.multiplayer.ServerData;
-import ru.dreamix.protection.api.impl.profile.ProfileAPI;
+import quick.profile.ProfileAPI;
 
 // $VF: Compiled from s
 public class DiscordRpcModule extends ClientModule {

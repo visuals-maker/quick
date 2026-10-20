@@ -2,7 +2,7 @@
 package hex.api.baritone.api.pathing.goals;
 
 import hex.api.baritone.api.BaritoneAPI;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalAxis implements Goal {
@@ -44,6 +44,5 @@ public class GoalAxis implements Goal {
    }
 
    static {
-      VMBridge.identifyClass(GoalAxis.class, "lDgzsazP");
-   }
+      }
 }

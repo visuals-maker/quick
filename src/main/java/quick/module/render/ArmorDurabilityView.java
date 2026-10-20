@@ -1,7 +1,7 @@
 // Original binary: sg/ec/ILQmug0lpPVJsDez
 package quick.module.render;
 
-import sg.ec.*;
+import quick.core.*;
 
 import it.unimi.dsi.fastutil.longs.Long2IntOpenHashMap;
 import net.minecraft.core.registries.BuiltInRegistries;

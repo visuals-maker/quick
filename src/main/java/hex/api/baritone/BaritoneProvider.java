@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import net.minecraft.client.Minecraft;
-import sg.ec.BotClient;
+import quick.core.BotClient;
 
 // $VF: Compiled from s
 public final class BaritoneProvider implements IBaritoneProvider {

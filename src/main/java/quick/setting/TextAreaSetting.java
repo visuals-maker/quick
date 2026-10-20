@@ -1,7 +1,7 @@
 // Original binary: sg/ec/U1oG68VRwXKXYvO8
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class TextAreaSetting extends Setting<String> {

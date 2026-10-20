@@ -12,7 +12,7 @@ import hex.api.baritone.api.utils.BetterBlockPos;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class FarmCommand extends Command {
@@ -61,8 +61,7 @@ public class FarmCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(FarmCommand.class, "CFkb8TUb");
-   }
+      }
 
    @Override
    public Stream<String> tabComplete(String var1, IArgConsumer var2) {

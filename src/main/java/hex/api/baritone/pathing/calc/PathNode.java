@@ -4,7 +4,7 @@ package hex.api.baritone.pathing.calc;
 import hex.api.baritone.api.pathing.goals.Goal;
 import hex.api.baritone.api.utils.BetterBlockPos;
 import hex.api.baritone.api.utils.SettingsUtil;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class PathNode {
@@ -20,8 +20,7 @@ public final class PathNode {
    private static String 诶ха = "";
 
    static {
-      VMBridge.identifyClass(PathNode.class, "FdjNpMKO");
-   }
+      }
 
    @Override
    public int hashCode() {

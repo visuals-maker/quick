@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.file.Path;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class WindowsSystemSocket implements SystemSocket {
@@ -72,8 +72,7 @@ public class WindowsSystemSocket implements SystemSocket {
    }
 
    static {
-      VMBridge.identifyClass(WindowsSystemSocket.class, "dCAAQ4pL");
-   }
+      }
 
    @Override
    public void write(ByteBuffer var1) throws IOException {

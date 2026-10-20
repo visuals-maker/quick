@@ -4,7 +4,7 @@ package hex.api.baritone.api.schematic.mask.shape;
 import hex.api.baritone.api.schematic.mask.AbstractMask;
 import hex.api.baritone.api.schematic.mask.StaticMask;
 import net.minecraft.core.Direction.Axis;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class CylinderMask extends AbstractMask implements StaticMask {
@@ -45,8 +45,7 @@ public final class CylinderMask extends AbstractMask implements StaticMask {
    }
 
    static {
-      VMBridge.identifyClass(CylinderMask.class, "Q7PzspU7");
-   }
+      }
 
    private static int getB(int var0, int var1, Axis var2) {
       return var2 == Axis.Z ? var0 : var1;

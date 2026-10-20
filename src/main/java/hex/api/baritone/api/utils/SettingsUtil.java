@@ -30,7 +30,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class SettingsUtil {
@@ -159,8 +159,7 @@ public class SettingsUtil {
    }
 
    static {
-      VMBridge.identifyClass(SettingsUtil.class, "J24qoEU9");
-   }
+      }
 
    private static boolean isComment(String var0) {
       return var0.startsWith(COMMENT_PREFIX) || var0.startsWith(COMMENT_ALT_PREFIX);
@@ -235,8 +234,7 @@ public class SettingsUtil {
          }
 
          static {
-            VMBridge.identifyClass(Object.class, "fmvDV8mp");
-         }
+            }
       },
       MAPPING      // $VF: Compiled from s
  {
@@ -274,8 +272,7 @@ public class SettingsUtil {
          }
 
          static {
-            VMBridge.identifyClass(Object.class, "zmeqRFtV");
-         }
+            }
       };
 
       private final Class<?> cla$$;

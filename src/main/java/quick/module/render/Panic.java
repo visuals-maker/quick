@@ -3,7 +3,7 @@ package quick.module.render;
 
 
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class Panic extends ClientModule {

@@ -3,7 +3,7 @@ package quick.module.movement;
 
 
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -27,8 +27,8 @@ import net.minecraft.world.phys.HitResult.Type;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.joml.Vector2f;
-import sg.mx.LivingEntityMixin_1248;
-import sg.mx.MultiPlayerGameModeMixin_1262;
+import quick.mixin.LivingEntityMixin_1248;
+import quick.mixin.MultiPlayerGameModeMixin_1262;
 
 // $VF: Compiled from s
 public class WallClimb extends ClientModule {

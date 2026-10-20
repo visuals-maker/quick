@@ -1,7 +1,7 @@
 // Original binary: sg/ec/y6r5iRCAjMwV4RIB
 package quick.module.combat;
 
-import sg.ec.*;
+import quick.core.*;
 
 import it.unimi.dsi.fastutil.ints.IntList;
 import java.util.Iterator;

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Stream;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class TunnelCommand extends Command {
@@ -87,8 +87,7 @@ public class TunnelCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(TunnelCommand.class, "lBMgFoUb");
-   }
+      }
 
    @Override
    public String getShortDesc() {

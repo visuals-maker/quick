@@ -10,7 +10,7 @@ import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
 import quick.module.render.ClickGUI;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
@@ -82,7 +82,12 @@ public class ConfigCommand extends AbstractCommand {
       );
       var1.then(this.literal(field02097).then(this.argument(field02098, StringArgumentType.string()).executes(var1x -> {
          String var2 = (String)var1x.getArgument(field02108, String.class);
-         if (CustomResourceManager.INSTANCE.method02465(var2)) {
+         File customDir = CustomResourceManager.INSTANCE.field05980;
+         if (!customDir.exists()) {
+            customDir.mkdirs();
+         }
+         ModuleConfigStorage storage = new ModuleConfigStorage(new File(customDir, var2 + ".file"));
+         if (storage.method00296()) {
             ActiveConfigTracker.field06857.setActiveConfig(var2);
             this.sendMessage("Config \"" + var2 + "\" saved.");
          } else {

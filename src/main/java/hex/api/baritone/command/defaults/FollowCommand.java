@@ -24,7 +24,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class FollowCommand extends Command {
@@ -74,8 +74,7 @@ public class FollowCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(FollowCommand.class, "6gGgUGt4");
-   }
+      }
 
    @Override
    public List<String> getLongDesc() {
@@ -153,8 +152,7 @@ public class FollowCommand extends Command {
       private static String бд3 = "";
 
       static {
-         VMBridge.identifyClass(FollowCommand.NoEntitiesException.class, "NMSFXZxO");
-      }
+         }
 
       protected NoEntitiesException() {
          super(бд3);

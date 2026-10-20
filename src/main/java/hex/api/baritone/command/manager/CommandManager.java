@@ -18,7 +18,7 @@ import hex.api.baritone.command.defaults.DefaultCommands;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class CommandManager implements ICommandManager {
@@ -27,8 +27,7 @@ public class CommandManager implements ICommandManager {
    private static String бКА = "";
 
    static {
-      VMBridge.identifyClass(CommandManager.class, "soR3i6Kp");
-   }
+      }
 
    @Override
    public ICommand getCommand(String var1) {

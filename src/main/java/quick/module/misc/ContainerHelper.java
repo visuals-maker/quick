@@ -4,7 +4,7 @@ package quick.module.misc;
 
 import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.platform.InputConstants;
@@ -17,7 +17,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import org.lwjgl.glfw.GLFW;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import sg.mx.AbstractContainerScreenMixin;
+import quick.mixin.AbstractContainerScreenMixin;
 
 // $VF: Compiled from s
 public class ContainerHelper extends ClientModule {

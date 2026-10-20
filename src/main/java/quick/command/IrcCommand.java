@@ -3,7 +3,7 @@ package quick.command;
 
 
 import quick.module.misc.IRC;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;

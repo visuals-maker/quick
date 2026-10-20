@@ -1,7 +1,7 @@
 // Original binary: sg/ec/zC0XiVWavMUfU3V1
 package quick.module.render;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class ClickGUI extends ClientModule {

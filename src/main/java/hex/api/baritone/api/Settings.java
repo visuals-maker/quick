@@ -32,7 +32,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class Settings {
@@ -618,8 +618,7 @@ public final class Settings {
    }
 
    static {
-      VMBridge.identifyClass(Settings.class, "OessSc2V");
-   }
+      }
 
    // $VF: Compiled from s
    @Target(ElementType.FIELD)
@@ -671,8 +670,7 @@ public final class Settings {
       }
 
       static {
-         VMBridge.identifyClass(Settings.Setting.class, "RkdJm6Lu");
-      }
+         }
 
       @Override
       public String toString() {

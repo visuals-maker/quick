@@ -42,8 +42,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import net.minecraft.client.Minecraft;
-import ru.dreamix.fabricloader.VMBridge;
-import sg.ec.BotClient;
+
+import quick.core.BotClient;
 
 // $VF: Compiled from s
 public class Baritone implements IBaritone {
@@ -227,8 +227,7 @@ public class Baritone implements IBaritone {
    }
 
    static {
-      VMBridge.identifyClass(Baritone.class, "JrU4q6Hh");
-   }
+      }
 
    Baritone(Minecraft var1) {
       this(var1, null);

@@ -1,7 +1,7 @@
 // Original binary: sg/ec/EPgW74AELblqgmCc
 package quick.setting;
 
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class KeyBindSetting extends Setting<KeyBinding> {

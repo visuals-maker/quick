@@ -5,7 +5,7 @@ import hex.api.baritone.api.utils.BetterBlockPos;
 import hex.api.baritone.api.utils.SettingsUtil;
 import hex.api.baritone.api.utils.interfaces.IGoalRenderPos;
 import net.minecraft.core.BlockPos;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalGetToBlock implements Goal, IGoalRenderPos {
@@ -44,8 +44,7 @@ public class GoalGetToBlock implements Goal, IGoalRenderPos {
    }
 
    static {
-      VMBridge.identifyClass(GoalGetToBlock.class, "zogAsN3P");
-   }
+      }
 
    @Override
    public int hashCode() {

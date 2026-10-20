@@ -7,7 +7,7 @@ import hex.api.baritone.api.utils.interfaces.IGoalRenderPos;
 import it.unimi.dsi.fastutil.doubles.DoubleIterator;
 import it.unimi.dsi.fastutil.doubles.DoubleOpenHashSet;
 import net.minecraft.core.BlockPos;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalNear implements Goal, IGoalRenderPos {
@@ -52,8 +52,7 @@ public class GoalNear implements Goal, IGoalRenderPos {
    }
 
    static {
-      VMBridge.identifyClass(GoalNear.class, "8xlqAUZR");
-   }
+      }
 
    @Override
    public double heuristic() {

@@ -3,7 +3,7 @@ package hex.api.baritone.api.pathing.goals;
 
 import hex.api.baritone.api.pathing.movement.ActionCosts;
 import hex.api.baritone.api.utils.SettingsUtil;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class GoalYLevel implements ActionCosts, Goal {
@@ -52,8 +52,7 @@ public class GoalYLevel implements ActionCosts, Goal {
    }
 
    static {
-      VMBridge.identifyClass(GoalYLevel.class, "28uciaml");
-   }
+      }
 
    @Override
    public String toString() {

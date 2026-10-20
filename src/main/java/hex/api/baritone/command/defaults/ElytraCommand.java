@@ -21,7 +21,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.ClickEvent.RunCommand;
 import net.minecraft.network.chat.HoverEvent.ShowText;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ElytraCommand extends Command {
@@ -285,6 +285,5 @@ public class ElytraCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(ElytraCommand.class, "PdzAOu8I");
-   }
+      }
 }

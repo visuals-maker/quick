@@ -3,7 +3,7 @@ package quick.module.render;
 
 
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import java.util.ArrayList;
@@ -33,7 +33,7 @@ import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Vector2f;
-import sg.mx.BossHealthOverlayMixin;
+import quick.mixin.BossHealthOverlayMixin;
 
 // $VF: Compiled from s
 public class WorldHelper extends ClientModule {

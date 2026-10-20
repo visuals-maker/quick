@@ -3,7 +3,7 @@ package quick.module.misc;
 
 
 import quick.setting.MultiToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 // $VF: Compiled from s
 public class ClientHelper extends ClientModule {

@@ -9,7 +9,7 @@ import hex.api.baritone.api.command.exception.CommandException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ForceCancelCommand extends Command {
@@ -21,8 +21,7 @@ public class ForceCancelCommand extends Command {
    private static String АВ_ = "";
 
    static {
-      VMBridge.identifyClass(ForceCancelCommand.class, "sJcD2tMN");
-   }
+      }
 
    public ForceCancelCommand(IBaritone var1) {
       super(var1, АВЙ);

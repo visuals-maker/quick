@@ -1,7 +1,7 @@
 // Original binary: sg/ec/xcvbmmXHTX5ZGOY2
 package quick.command;
 
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import net.minecraft.client.multiplayer.ClientSuggestionProvider;

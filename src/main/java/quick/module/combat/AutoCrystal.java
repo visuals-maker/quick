@@ -5,7 +5,7 @@ package quick.module.combat;
 import quick.setting.KeyBindSetting;
 import quick.setting.NumberSetting;
 import quick.setting.ToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

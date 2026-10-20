@@ -26,7 +26,7 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.ClickEvent.RunCommand;
 import net.minecraft.network.chat.ClickEvent.SuggestCommand;
 import net.minecraft.network.chat.HoverEvent.ShowText;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class SetCommand extends Command {
@@ -285,8 +285,7 @@ public class SetCommand extends Command {
    }
 
    static {
-      VMBridge.identifyClass(SetCommand.class, "m72YxOgX");
-   }
+      }
 
    @Override
    public String getShortDesc() {

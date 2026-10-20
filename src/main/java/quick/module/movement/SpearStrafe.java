@@ -3,10 +3,10 @@ package quick.module.movement;
 
 
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.item.Items;
-import sg.mx.MinecraftMixin;
+import quick.mixin.MinecraftMixin;
 
 // $VF: Compiled from s
 public class SpearStrafe extends ClientModule {

@@ -5,7 +5,7 @@ package quick.module.render;
 import quick.setting.ModeSetting;
 import quick.setting.MultiToggleSetting;
 import quick.setting.NumberSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ import net.minecraft.world.scores.DisplaySlot;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.scores.Scoreboard;
 import org.joml.Matrix3x2fStack;
-import sg.mx.HudMixin_1316;
+import quick.mixin.HudMixin_1316;
 
 // $VF: Compiled from s
 public class Beautification extends ClientModule {

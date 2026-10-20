@@ -1,7 +1,7 @@
 // Original binary: sg/ec/X3SQUo4YkilELrBk
 package quick.command;
 
-import sg.ec.*;
+import quick.core.*;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;

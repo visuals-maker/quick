@@ -4,7 +4,7 @@ package quick.module.misc;
 
 import quick.setting.ModeSetting;
 import quick.setting.MultiToggleSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.inventory.ChestMenu;

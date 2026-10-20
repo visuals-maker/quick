@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class SplicedPath extends PathBase {
@@ -22,8 +22,7 @@ public class SplicedPath extends PathBase {
    private static String 诶х衣 = "";
 
    static {
-      VMBridge.identifyClass(SplicedPath.class, "i7psTqpr");
-   }
+      }
 
    @Override
    public Goal getGoal() {

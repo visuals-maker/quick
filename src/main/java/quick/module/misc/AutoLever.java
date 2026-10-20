@@ -4,7 +4,7 @@ package quick.module.misc;
 
 import quick.setting.NumberSetting;
 import quick.module.movement.Speed;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;

@@ -4,7 +4,7 @@ package quick.module.player;
 
 import quick.setting.KeyBindSetting;
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.Items;

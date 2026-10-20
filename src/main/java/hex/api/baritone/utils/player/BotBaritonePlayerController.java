@@ -12,8 +12,8 @@ import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
-import sg.ec.BotClient;
-import sg.ec.BotInteractionController;
+import quick.core.BotClient;
+import quick.core.BotInteractionController;
 
 // $VF: Compiled from s
 public final class BotBaritonePlayerController implements IPlayerController {

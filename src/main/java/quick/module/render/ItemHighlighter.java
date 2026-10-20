@@ -1,7 +1,7 @@
 // Original binary: sg/ec/i8Zg1RazNcUluXvs
 package quick.module.render;
 
-import sg.ec.*;
+import quick.core.*;
 
 import java.util.HashMap;
 import java.util.Map;

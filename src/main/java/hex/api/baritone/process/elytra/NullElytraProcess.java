@@ -10,7 +10,7 @@ import hex.api.baritone.utils.BaritoneProcessHelper;
 import java.util.Collections;
 import java.util.List;
 import net.minecraft.core.BlockPos;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public final class NullElytraProcess extends BaritoneProcessHelper implements IElytraProcess {
@@ -25,8 +25,7 @@ public final class NullElytraProcess extends BaritoneProcessHelper implements IE
    }
 
    static {
-      VMBridge.identifyClass(NullElytraProcess.class, "GJFwO29F");
-   }
+      }
 
    @Override
    public void onLostControl() {

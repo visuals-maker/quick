@@ -9,7 +9,7 @@ import hex.api.baritone.api.pathing.goals.GoalXZ;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class ThisWayCommand extends Command {
@@ -22,8 +22,7 @@ public class ThisWayCommand extends Command {
    private static String бсо = "";
 
    static {
-      VMBridge.identifyClass(ThisWayCommand.class, "V5eyYVVV");
-   }
+      }
 
    @Override
    public List<String> getLongDesc() {

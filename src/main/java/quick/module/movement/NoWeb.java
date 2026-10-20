@@ -3,7 +3,7 @@ package quick.module.movement;
 
 
 import quick.setting.ModeSetting;
-import sg.ec.*;
+import quick.core.*;
 
 import net.minecraft.client.multiplayer.prediction.BlockStatePredictionHandler;
 import net.minecraft.core.BlockPos;
@@ -19,8 +19,8 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sg.mx.ClientLevelMixin_1241;
-import sg.mx.EntityMixin_1159;
+import quick.mixin.ClientLevelMixin_1241;
+import quick.mixin.EntityMixin_1159;
 
 // $VF: Compiled from s
 public class NoWeb extends ClientModule {

@@ -13,7 +13,7 @@ import java.util.Set;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class MovementDownward extends Movement {
@@ -26,8 +26,7 @@ public class MovementDownward extends Movement {
    private static double _в = 0.0;
 
    static {
-      VMBridge.identifyClass(MovementDownward.class, "P7SLqhhl");
-   }
+      }
 
    public MovementDownward(IBaritone var1, BetterBlockPos var2, BetterBlockPos var3) {
       super(var1, var2, var3, new BetterBlockPos[]{var3});

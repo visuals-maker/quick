@@ -10,7 +10,7 @@ import hex.api.baritone.api.process.ICustomGoalProcess;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
-import ru.dreamix.fabricloader.VMBridge;
+
 
 // $VF: Compiled from s
 public class PathCommand extends Command {
@@ -23,8 +23,7 @@ public class PathCommand extends Command {
    private static String field00052 = "";
 
    static {
-      VMBridge.identifyClass(PathCommand.class, "B6ovcjXl");
-   }
+      }
 
    @Override
    public void execute(String var1, IArgConsumer var2) throws CommandException {
